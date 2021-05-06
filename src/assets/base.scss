@@ -1,0 +1,559 @@
+// BOOTSTRAP 4 VARIABLES
+
+@import "components/bootstrap4/functions";
+@import "components/bootstrap4/variables";
+@import "components/bootstrap4/mixins";
+
+// ArchitectUI Themes Variables
+
+@import "themes/layout-variables";
+
+// BOOTSTRAP 4 IMPORTS
+
+@import "components/bootstrap4/root";
+@import "components/bootstrap4/reboot";
+@import "components/bootstrap4/type";
+@import "components/bootstrap4/images";
+@import "components/bootstrap4/code";
+@import "components/bootstrap4/grid";
+@import "components/bootstrap4/tables";
+@import "components/bootstrap4/forms";
+@import "components/bootstrap4/buttons";
+@import "components/bootstrap4/transitions";
+@import "components/bootstrap4/dropdown";
+@import "components/bootstrap4/button-group";
+@import "components/bootstrap4/input-group";
+@import "components/bootstrap4/custom-forms";
+@import "components/bootstrap4/nav";
+@import "components/bootstrap4/navbar";
+@import "components/bootstrap4/card";
+//@import "components/bootstrap4/breadcrumb";
+@import "components/bootstrap4/pagination";
+//@import "components/bootstrap4/badge";
+//@import "components/bootstrap4/jumbotron";
+@import "components/bootstrap4/alert";
+@import "components/bootstrap4/progress";
+@import "components/bootstrap4/media";
+@import "components/bootstrap4/list-group";
+@import "components/bootstrap4/close";
+@import "components/bootstrap4/toasts";
+@import "components/bootstrap4/modal";
+@import "components/bootstrap4/tooltip";
+@import "components/bootstrap4/popover";
+@import "components/bootstrap4/carousel";
+@import "components/bootstrap4/spinners";
+@import "components/bootstrap4/utilities";
+@import "components/bootstrap4/print";
+
+*{
+  font-family: 'Poppins',sans-serif;
+}
+.pageBody {
+  max-width: unset;
+  align-self: center;
+  margin: 0 auto;
+
+}
+.pageHeading {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.18888889253139496px;
+  text-align: left;
+  color: #1F2C38;
+
+  @media only screen and (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+.pageSubHeading {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: -0.18888889253139496px;
+  text-align: left;
+  color: #1F2C38;
+}
+.sectionHeadingDescription {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.18888889253139496px;
+  text-align: left;
+  color: #697A88;
+
+  @media only screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+}
+.tabsContainer {
+  border-bottom: 1px solid #D3D3D3;
+
+  .tab {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -0.18888889253139496px;
+    text-align: left;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 4px solid transparent;
+    color: #1F2C38;
+    opacity: 0.4;
+    min-width: 140px;
+    text-align: center;
+
+    @media only screen and (max-width: 767px) {
+      padding: 8px 10px;
+      min-width: unset;
+    }
+
+    &.tabSelected {
+      color: #916CF6;
+      border-color: #916CF6;
+      opacity: 1;
+    }
+  }
+}
+
+.widget {
+  position: relative;
+  border-radius: 20px;
+  background: #fff;
+
+  &.shadow {
+    box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.05) !important;
+
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+  }
+}
+
+.widgetHeading {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color:#1F2C38;
+
+  @media only screen and (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+.shadow {
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.12) !important;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+}
+
+.dateRangeDropdownMenuTab {
+  font-size: 12px;
+  border-radius: 10px;
+
+  &.dateRangeDropdownMenuTabDisabled {
+    opacity: 0.7;
+  }
+}
+
+.grayscale {
+  filter: grayscale(1);
+}
+
+.underlined {
+  text-decoration: underline !important;
+}
+
+.z-9 {
+  z-index: 9;
+}
+.z-99 {
+  z-index: 99;
+}
+
+.skeletonLoading {
+  animation: skeletonLoading 1.5s infinite ease-in-out;
+}
+
+@keyframes skeletonLoading {
+  0% {
+    background: rgba(165, 165, 165, 0.1);
+  }
+  50% {
+    background: rgba(165, 165, 165, 0.25);
+  }
+  100% {
+    background: rgba(165, 165, 165, 0.1);
+  }
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.loaderContainer {
+  z-index: 999999999999999999999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 30px;
+}
+
+.colorPrimary {
+  color: #1F2C38;
+}
+.colorSecondary {
+  color: #697A88;
+}
+
+
+.black {
+  color: #000;
+}
+.dark {
+  color: #1F2C38;
+}
+.darkGrey {
+  color: #697A88;
+}
+.grey {
+  color: #ECECEC;
+}
+.lightGreyishBlue {
+  color: #E9F0F6;
+}
+.lightGrey {
+  color: #F8F9FA;
+}
+.lightStrikeGrey{
+  color:#A9A5A5;
+}
+.white {
+  color: #FFF;
+}
+.lightGreen {
+  color: #A7CD3F;
+}
+.red {
+  color: #FC6155;
+}
+.skyBlue {
+  color: #38C8ED;
+}
+.purple {
+  color: #AC80FF;
+}
+.lightPurple{
+  color: #916CF6;
+}
+.blue {
+  color: #8591FF;
+}
+.orange {
+  color: #FFA73B;
+}
+.yellow {
+  color: #FFD51E;
+}
+.pink {
+  color: #F86FDA;
+}
+.lightBlue {
+  color: #77B4FB;
+}
+.green {
+  color: #3AE0A4;
+}
+.darkYellow {
+  color: #F0B213;
+}
+.red2 {
+  color: #FF7C74;
+}
+
+.bgBlack {
+  background-color: #000;
+}
+.bgDark {
+  background-color: #1F2C38;
+}
+.bgMetalGrey {
+  background-color: #324250;
+}
+.bgDarkGrey {
+  background-color: #697A88;
+}
+.bgGrey {
+  background-color: #ECECEC;
+}
+.bgLightGreyishBlue {
+  background-color: #E9F0F6;
+}
+.bgLightGrey {
+  background-color: #F8F9FA;
+}
+.bgWhite {
+  background-color: #FFF;
+}
+.bgLightGreen {
+  background-color: #A7CD3F;
+}
+.bgRed {
+  background-color: #FC6155;
+}
+.bgSkyBlue {
+  background-color: #38C8ED;
+}
+.bgPurple {
+  background-color: #AC80FF;
+}
+.bgLightPurple {
+  background-color: #916CF6;
+}
+.bgBlue {
+  background-color: #8591FF;
+}
+.bgOrange {
+  background-color: #FFA73B;
+}
+.bgYellow {
+  background-color: #FFD51E;
+}
+.bgPink {
+  background-color: #F86FDA;
+}
+.bgLightBlue {
+  background-color: #77B4FB;
+}
+.bgGreen {
+  background-color: #3AE0A4;
+}
+.bgDarkYellow {
+  background-color: #F0B213;
+}
+.bgRed2 {
+  background-color: #FF7C74;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.fullBgImage {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.oneLineOnly {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.twoLinesOnly {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.threeLinesOnly {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.relative {
+  position: relative;
+}
+
+.btn-rounded {
+  border-radius: 50px;
+}
+
+.noBorder {
+  border: 0 !important;
+}
+
+.f10 {
+  font-size: 10px;
+}
+.f12 {
+  font-size: 12px;
+}
+.f13 {
+  font-size: 13px;
+}
+.f14 {
+  font-size: 14px;
+}
+.f16 {
+  font-size: 16px;
+}
+.f18 {
+  font-size: 18px;
+}
+.f20 {
+  font-size: 20px;
+}
+.f24 {
+  font-size: 24px;
+}
+
+.br-10p {
+  border-radius: 10px;
+}
+.mt-5, .my-5 {
+  margin-top: 2rem !important;
+}
+
+.formLabelText{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #697A88;
+  display: block;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.formTextInput{
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding:2px 10px;
+  border: 1px solid #C4C4C4;
+  height: 48px;
+  outline:none;
+  &:focus{
+    border: 2px solid #916CF6;
+  }
+}
+
+input[type=number].formTextInput::-webkit-outer-spin-button,
+input[type=number].formTextInput::-webkit-inner-spin-button {
+  opacity: 1;
+
+}
+
+input.formTextInput::-webkit-input-placeholder{
+  color: rgba(0, 0, 0, 0);
+}
+textarea.formTextArea::-webkit-input-placeholder{
+  color: rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 767px) {
+  input.formTextInput::-webkit-input-placeholder{
+    color: rgba(105, 122, 136, 0.51);
+
+  }
+  textarea.formTextArea::-webkit-input-placeholder{
+    color: rgba(105, 122, 136, 0.51);
+  }
+}
+
+input.formTextInput::-moz-placeholder{
+  color: rgba(0, 0, 0, 0);
+}
+textarea.formTextArea::-moz-placeholder{
+  color: rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 767px) {
+  input.formTextInput::-moz-placeholder{
+    color: rgba(105, 122, 136, 0.51);
+
+  }
+  textarea.formTextArea::-moz-placeholder{
+    color: rgba(105, 122, 136, 0.51);
+  }
+}
+
+input.formTextInput:-moz-placeholder{
+  color: rgba(0, 0, 0, 0);
+}
+textarea.formTextArea:-moz-placeholder{
+  color: rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 767px) {
+  input.formTextInput:-moz-placeholder{
+    color: rgba(105, 122, 136, 0.51);
+
+  }
+  textarea.formTextArea:-moz-placeholder{
+    color: rgba(105, 122, 136, 0.51);
+  }
+}
+
+input.formTextInput:-ms-input-placeholder{
+  color: rgba(0, 0, 0, 0);
+}
+textarea.formTextArea:-ms-input-placeholder{
+  color: rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 767px) {
+  input.formTextInput:-ms-input-placeholder{
+    color: rgba(105, 122, 136, 0.51);
+
+  }
+  textarea.formTextArea:-ms-input-placeholder{
+    color: rgba(105, 122, 136, 0.51);
+  }
+}
+
+
+.formTextArea{
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  min-height: 156px;
+  outline:none;
+  padding: 6px 10px;
+  &:focus{
+    border: 2px solid #916CF6;
+  }
+}
+.formSubmitBtn{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  background: #1F2C38;
+  color: #FFFFFF;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding:12px 28px;
+
+  &:hover{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  }
+
+}

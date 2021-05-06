@@ -1,0 +1,168 @@
+.careersPageHero {
+  padding: 40px 55px;
+  background-color: #916CF6;
+  color: #FFF;
+  position: relative;
+  z-index: 10;
+  @media only screen and (max-width: 767px) {
+    padding: 48px 0px 20px;
+    background: white;
+    color: #1F2C38;
+  }
+
+  .pageHeroWrapper {
+    width: 1024px;
+    max-width: 1340px;
+    margin: 0 auto;
+    align-items: stretch;
+    @media only screen and (max-width: 1340px) {
+      max-width: 100%;
+
+    }
+
+    .heroTitle {
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 53px;
+      letter-spacing: 0em;
+      text-align: center;
+      margin-bottom: 0px;
+
+      .heroTitleHighlight {
+        color: #916CF6;
+        font-weight: 700;
+      }
+
+      @media only screen and (max-width: 767px) {
+        font-size: 28px;
+        line-height: 42px;
+        //text-align: center;
+      }
+    }
+
+    .heroSubTitle {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: center;
+
+      @media only screen and (max-width: 767px) {
+        font-size: 20px;
+        line-height: 30px;
+        //text-align: center;
+      }
+    }
+
+    .careersControlContainer {
+      display: grid;
+      grid-template-columns:  144px 144px auto;
+      justify-content: center;
+      align-items: center;
+      grid-gap: 16px;
+      color: #444444;
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+      .searchCTA {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        padding: 8px 18px;
+        outline: none;
+        text-decoration: none;
+        background: #1F2C38;
+        cursor: pointer;
+      }
+    }
+
+    .openingsContainer {
+      .openingCategoryTitle {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -0.19208605587482452px;
+        text-align: left;
+        color: #FFFFFF;
+        @media only screen and (max-width: 767px) {
+          color: #697A88;
+          font-size: 20px;
+          line-height: 30px;
+
+        }
+
+      }
+      .singleOpeningContainer{
+        margin-bottom: 20px;
+        border-radius: 20px;
+        background: white;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        justify-content: space-between;
+        padding: 26px 36px;
+        color: #000000;
+        grid-gap: 0px;
+        border-bottom: none;
+        @media only screen and (max-width: 767px) {
+          padding: 16px 8px;
+          grid-gap: 12px;
+          grid-template-columns: 1fr;
+          border-bottom:  1px solid #C4C4C4;
+          border-radius: 0px;
+        }
+      }
+      .openingDescriptionContainer{
+        .roleTitle{
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 30px;
+          letter-spacing: -0.19208605587482452px;
+          text-align: left;
+          @media only screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 21px;
+          }
+
+        }
+        .roleLocation{
+          font-family: Poppins;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #697A88;
+        }
+      }
+      .applyCTA {
+        align-self: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        padding: 8px 18px;
+        outline: none;
+        text-decoration: none;
+        background: #1F2C38;
+        cursor: pointer;
+        max-width: 90px;
+      }
+    }
+  }
+}

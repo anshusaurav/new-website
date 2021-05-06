@@ -1,0 +1,15 @@
+// General
+
+a,
+button,
+.btn {
+  outline: none !important;
+}
+
+.app-container {
+  font-family: "Poppins" !important;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}

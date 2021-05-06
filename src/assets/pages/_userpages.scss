@@ -1,0 +1,81 @@
+// User Pages
+
+.app-logo {
+  height: $logo-height;
+  width: $logo-width;
+  background: url('~assets/utils/images/logo-inverse.png');
+}
+
+.app-logo-inverse {
+  height: $logo-height;
+  width: $logo-width;
+  background: url('~assets/utils/images/logo.png');
+}
+.app-logo-unsigned{
+  height: 66px;
+  width: 54px;
+  background: no-repeat center/100% url('~assets/utils/images/Group@3x.png');
+}
+
+.app-company-name{
+  height: 33px;
+  width: 273px;
+  background: no-repeat center/100% url('~assets/utils/images/app-company-name.png');
+}
+.app-login-box {
+  min-height: calc(100vh - 87px);
+  .app-logo {
+    //margin-bottom: $layout-spacer-lg;
+
+  }
+  .workspace-btn{
+    border-radius: 10px;
+    padding-block: 10px;
+    padding-inline: 30px;
+    width: auto;
+    @media only screen and (max-width: 600px){
+      border-radius: 8px;
+      padding-block: 8px;
+      padding-inline: 20px;
+      width:100%;
+    }
+  }
+  .app-logo-progress {
+    height: 28px;
+    width: $logo-width;
+    background: url('~assets/utils/images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .app-workspace-container{
+    min-height: 100%;
+    background-image:url('https://gcdn.thunderpod.com/RegisterProgressWeb/workspaceCreateBG.png');
+    background-size:contain;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right top 50%;
+    @media only screen and (max-width: 768px){
+      background-image:none;
+    }
+    .main-card{
+      height: 100%;
+      min-height: 100%;
+    }
+  }
+  .workspace-select{
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .remove-invite{
+    right: 4px;
+  }
+  h4 {
+    margin-bottom: $layout-spacer-x;
+    font-weight: normal;
+    span {
+      font-size: $font-size-lg;
+    }
+  }
+
+}

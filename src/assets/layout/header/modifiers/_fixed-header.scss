@@ -1,0 +1,28 @@
+// Fixed Header
+
+.fixed-header {
+  .app-header {
+
+    font-family: Poppins, sans-serif;
+    visibility: visible;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    .app-header__logo {
+      visibility: visible;
+    }
+  }
+
+  .app-main {
+    padding-top: $app-header-height;
+  }
+
+  &:not(.fixed-sidebar):not(.closed-sidebar) {
+    .app-sidebar {
+      .app-header__logo {
+        visibility: hidden;
+      }
+    }
+  }
+}
