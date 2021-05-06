@@ -1,8 +1,7 @@
 import React from "react"
 import "./OtherHero.scss"
-import TypeAnimation from 'react-type-animation';
 const Hero = (props) => {
-  const {demoClick, card} = props;
+  const {card} = props;
   return (
     <div className="d-flex align-items-center justify-content-between otherPageHero">
       <div className="pageHeroWrapper">

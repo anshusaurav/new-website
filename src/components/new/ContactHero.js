@@ -1,11 +1,6 @@
 import React from "react"
 import "./ContactHero.scss"
-import {
-  faChevronRight, faEnvelopeOpen,
-  faLocationArrow,
-  faMailBulk, faMapMarkerAlt,
-  faPhoneAlt,
-  faSearchLocation
+import {faEnvelopeOpen, faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebookF, faInstagram, faLinkedinIn, faTwitter} from "@fortawesome/free-brands-svg-icons";
@@ -13,18 +8,13 @@ import {faFacebookF, faInstagram, faLinkedinIn, faTwitter} from "@fortawesome/fr
 const contactInfoList = [
   {
     title: 'Our office',
-    subTitle: '1013 Centre road, suite 403-B City-Wimington, new castle, Zip Code 19805-1270',
+    subTitle: '1013 Centre road, Suite 403-B, Wimington, New Castle, Zip Code 19805-1270',
     icon: faMapMarkerAlt
   },
   {
     title: 'Email',
-    subTitle: 'Support@thunderpod.com',
+    subTitle: 'support@thunderpod.com',
     icon: faEnvelopeOpen
-  },
-  {
-    title: 'Contact',
-    subTitle: '+91 9769314368',
-    icon: faPhoneAlt
   },
 
 ]

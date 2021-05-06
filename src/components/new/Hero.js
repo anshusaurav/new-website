@@ -1,7 +1,5 @@
-import React, {useEffect, useRef, useState} from "react"
+import React, {useEffect, useState} from "react"
 import "./Hero.scss"
-import TypeAnimation from 'react-type-animation';
-import {ReactTypeformEmbed} from "react-typeform-embed";
 import {CSSTransition, TransitionGroup} from "react-transition-group";
 
 const textArray = ['Performance', 'Growth', 'Productivity'];

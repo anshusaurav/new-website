@@ -45,7 +45,7 @@ const Features = (props) => {
       </div>
       <div className="preFooterCTAContainer">
         <div className="title">Maximize your
-          workplace {page === "Home" ? "ROI":page}
+          workplace {page === "Home"||"Analytics" ? "ROI":page}
         </div>
         <div className="CTAWrapper mt-4">
           <button className="demoCTA showOnMd" onClick={() => demoClick()}>Request a demo</button>
