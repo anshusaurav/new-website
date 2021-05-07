@@ -50,7 +50,8 @@
           display: none;
         }
         .productDropdownMenu{
-          top: 24.5px !important;
+          top: -2px !important;
+          left: -48px !important;
           .productMenuItem{
             outline: none;
             &:active{

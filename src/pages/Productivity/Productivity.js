@@ -5,7 +5,8 @@ import OtherHero from "../../components/new/OtherHero";
 const heroCard = {
   title: "Productivity",
   subTitle: "Measure to improve",
-  imageURL: "assets/images/productivity-hero.png"
+  imageURL: "assets/images/productivity-hero.png",
+  lowImageURL: "assets/images/productivity-hero-low.png"
 }
 const cards = [
   {
@@ -27,7 +28,8 @@ const cards = [
   {
     title: "Live shows",
     subTitle:"Teams that laugh together, succeed together. Book a pocket-friendly  show for your employees",
-    imageURL: "assets/images/productivity-why-tp4.png"
+    imageURL: "assets/images/productivity-why-tp4.png",
+
   }]
 const Productivity = (props) => {
   const {openTypeForm} = props;

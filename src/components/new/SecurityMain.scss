@@ -1,0 +1,107 @@
+.securityMain {
+  padding: 32px 80px 44px !important;
+  color: #000000;
+
+  @media only screen and (max-width: 767px) {
+    padding: 28px 20px 36px !important;
+  }
+
+  .sectionTitle {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1F2C38;
+    @media only screen and (max-width: 575px) {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+  .featuresContainer {
+    max-width: 1324px;
+    margin: 0 auto;
+    padding: 0 48px;
+    @media only screen and (max-width: 1324px) {
+      max-width: 100%;
+    }
+    @media only screen and (max-width: 1200px) {
+      padding: 0 24px;
+    }
+    @media only screen and (max-width: 767px) {
+      padding: 0;
+    }
+
+  }
+  .cardTitle {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.19208605587482452px;
+    text-align: left;
+    //max-width: 480px;
+    @media only screen and (max-width: 767px) {
+      font-size: 22px;
+      line-height: 27px;
+      //text-align: center;
+    }
+    @media only screen and (max-width: 575px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .cardSubTitle {
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.19208605587482452px;
+    text-align: left;
+    @media only screen and (max-width: 767px) {
+      font-size: 14px;
+      line-height: 21px;
+      //text-align: center;
+    }
+  }
+  .featuresDescription{
+    padding: 0 20px;
+    //margin: 0 auto;
+    //text-align: center;
+    //display: flex;
+    //align-items: center;
+    @media only screen and (max-width: 1200px) {
+      padding: 18px;
+    }
+    @media only screen and (max-width: 992px) {
+      padding: 14px;
+    }
+    @media only screen and (max-width: 767px) {
+      padding: 0;
+    }
+  }
+  .securityPointer{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: start;
+    grid-gap: 16px;
+    @media only screen and (max-width: 767px) {
+      grid-template-columns: 48px 1fr;
+      grid-gap: 8px;
+    }
+  }
+  .hideOnMd{
+    display: none;
+    @media only screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+  .showOnMd{
+    display: block;
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}

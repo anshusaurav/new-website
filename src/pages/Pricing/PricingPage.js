@@ -7,12 +7,13 @@ const heroCard = {
 }
 
 const PricingPage = (props) => {
+  const {openTypeForm} = props;
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <>
-      <PricingHero card={heroCard} page="Pricing"/>
+      <PricingHero card={heroCard} page="Pricing" openTypeForm = {()=>openTypeForm()}/>
     </>
   )
 }

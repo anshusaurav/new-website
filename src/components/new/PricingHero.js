@@ -41,7 +41,7 @@ const pricingOptions = [
       'Feedback',
       'Leaderboard',
       'Insights',
-      'Growth card',
+      'Growth cards',
       'Courses',
       'Workshops'],
   },
@@ -53,7 +53,7 @@ const pricingOptions = [
       'Feedback',
       'Leaderboard',
       'Insights',
-      'Growth card',
+      'Growth cards',
       'Courses',
       'Workshops',
       'Physical wellbeing',
@@ -65,7 +65,7 @@ const pricingOptions = [
     title: 'Growth',
     price: '$4',
     features: [
-      'Growth card',
+      'Growth cards',
       'Courses',
       'Workshops'],
   },
@@ -79,8 +79,8 @@ const pricingOptions = [
   },
 ]
 const PricingHero = (props) => {
-  const {card} = props;
-  const [mobilePricingState, setMobilePricingState] = useState([false, false, false,false,false])
+  const {card, openTypeForm} = props;
+  const [mobilePricingState, setMobilePricingState] = useState([false, false, true,false,false])
   return (
     <div className="d-flex flex-nowrap align-items-center justify-content-center pricingPageHero">
       <div className="pageHeroWrapper px-2 px-xl-4">
@@ -95,7 +95,7 @@ const PricingHero = (props) => {
             {
               pricingOptions.map((option, index) => {
                 return (
-                  <div
+                  <div key={"pricingOption-"+index}
                     className={classNames("pricingOption", {"pricing-order-0": index == 0}, {"pricing-order-1": index == 1},
                       {"pricing-order-2": index == 2}, {"pricing-order-3": index == 3}, {"pricing-order-4": index == 4})}
                     onClick={()=>{
@@ -148,6 +148,7 @@ const PricingHero = (props) => {
                     <div className="d-flex justify-content-center mt-3 mt-md-5">
                       <button className="getStartedCTA" onClick={(e)=>{
                         e.stopPropagation();
+                        openTypeForm();
                         console.log('Hello');
                       }}>Get started</button>
                     </div>

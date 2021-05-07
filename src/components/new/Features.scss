@@ -63,6 +63,23 @@
     }
 
   }
+  .featureMoreCTA{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: -0.19208605587482452px;
+    text-align: left;
+    color: #916CF6;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    @media only screen and (max-width: 767px) {
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      margin-top: 16px;
+    }
+  }
   .rightImage{
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -113,7 +130,6 @@
   .featuresDescription{
     padding: 0 44px;
     margin: 0 auto;
-    text-align: center;
     display: flex;
     align-items: center;
     @media only screen and (max-width: 1200px) {

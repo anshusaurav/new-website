@@ -37,21 +37,25 @@
         color: #916CF6;
         font-weight: 700;
       }
-      .messageout-enter {
-        opacity: 0.2;
-        transition: all 400ms ease-out;
+      @media only screen and (max-width: 1200px) {
+        font-size: 28px;
+        line-height: 42px;
       }
-      .messageout-enter-active {
-        opacity: 1;
-        transition: all 800ms ease-in;
-      }
-      /* starting EXIT animation */
-      .messageout-exit {
-        display: none;
-        //width: 0;
-        opacity: 0.00;
-        transform: scale(1.01);
-      }
+      //.messageout-enter {
+      //  opacity: 0.2;
+      //  transition: all 400ms ease-out;
+      //}
+      //.messageout-enter-active {
+      //  opacity: 1;
+      //  transition: all 800ms ease-in;
+      //}
+      ///* starting EXIT animation */
+      //.messageout-exit {
+      //  display: none;
+      //  //width: 0;
+      //  opacity: 0.00;
+      //  transform: scale(1.01);
+      //}
       @media only screen and (max-width: 767px) {
         font-size: 28px;
         line-height: 42px;

@@ -555,5 +555,37 @@ textarea.formTextArea:-ms-input-placeholder{
   &:hover{
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   }
+}
 
+ol.alpha-braces {
+  counter-reset: list;
+  margin: 0;
+}
+
+ol.alpha-braces > li {
+  list-style: none;
+  position: relative;
+}
+
+ol.alpha-braces > li:before {
+  counter-increment: list;
+  content: "(" counter(list, lower-alpha) ") ";
+  position: absolute;
+  left: -1.75em;
+}
+ol.roman-braces {
+  counter-reset: list;
+  margin: 0;
+}
+
+ol.roman-braces > li {
+  list-style: none;
+  position: relative;
+}
+
+ol.roman-braces > li:before {
+  counter-increment: list;
+  content: "(" counter(list, lower-roman) ")";
+  position: absolute;
+  left: -1.75em;
 }

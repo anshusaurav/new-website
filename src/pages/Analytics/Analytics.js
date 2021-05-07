@@ -5,7 +5,8 @@ import OtherHero from "../../components/new/OtherHero";
 const heroCard = {
   title: "Analytics",
   subTitle: "Make the right decisions",
-  imageURL: "assets/images/analytics-hero.png"
+  imageURL: "assets/images/analytics-hero.png",
+  lowImageURL: "assets/images/analytics-hero-low.png"
 }
 const cards = [
   {

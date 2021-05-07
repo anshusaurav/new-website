@@ -46,6 +46,7 @@ const Header = (props) => {
   //   return () => window.removeEventListener('scroll', handleScroll);
   // }, [prevScrollPos, visible, handleScroll]);
   const toggle = () => setDropdownOpen(dropDownOpen => !dropDownOpen);
+
   return (
     <>
       <div className="pageHeader">
@@ -55,32 +56,44 @@ const Header = (props) => {
           </div>
           <div className="headerMenuWrapper">
             <div className="headerMenuContainer">
-              <Dropdown isOpen={dropdownOpen} toggle={toggle} direction={"down"}>
+              <Dropdown isOpen={dropdownOpen} toggle={toggle} direction={"down"} onMouseOver={() => {
+                setDropdownOpen(true);
+              }}
+                        onMouseLeave={() => {
+                setDropdownOpen(false);}}
+              >
                 <DropdownToggle className="bg-white border-0">
-
                   <div className="headerMenuOption">
                     Products&nbsp;
                     <FontAwesomeIcon
                       className="ml-2"
                       color="#000"
-                      icon={faCaretDown}
+                      icon={dropdownOpen?faCaretDown:faCaretDown}
                     />
                   </div>
                 </DropdownToggle>
                 <DropdownMenu className="productDropdownMenu">
-                  <DropdownItem className="productMenuItem" onClick={()=>{props.history.push('/performance')}}>
+                  <DropdownItem className="productMenuItem" onClick={() => {
+                    props.history.push('/performance')
+                  }}>
                     Performance
                   </DropdownItem>
                   <DropdownItem divider/>
-                  <DropdownItem className="productMenuItem" onClick={()=>{props.history.push('/growth')}}>
+                  <DropdownItem className="productMenuItem" onClick={() => {
+                    props.history.push('/growth')
+                  }}>
                     Growth
                   </DropdownItem>
                   <DropdownItem divider/>
-                  <DropdownItem className="productMenuItem" onClick={()=>{props.history.push('/productivity')}}>
+                  <DropdownItem className="productMenuItem" onClick={() => {
+                    props.history.push('/productivity')
+                  }}>
                     Productivity
                   </DropdownItem>
                   <DropdownItem divider/>
-                  <DropdownItem className="productMenuItem" onClick={()=>{props.history.push('/analytics')}}>
+                  <DropdownItem className="productMenuItem" onClick={() => {
+                    props.history.push('/analytics')
+                  }}>
                     Analytics
                   </DropdownItem>
                 </DropdownMenu>
@@ -122,23 +135,38 @@ const Header = (props) => {
             {/*<a className="signInCTA" href="https://business.thunderpod.com" target="_blank"*/}
             {/*   rel="noopener noreferrer">Sign in</a>*/}
 
-              <DropdownItem className="productMenuItem" onClick={()=>{props.history.push('/performance'); setHamburgerOpen(false);}}>
-                Performance
-              </DropdownItem>
+            <DropdownItem className="productMenuItem" onClick={() => {
+              props.history.push('/performance');
+              setHamburgerOpen(false);
+            }}>
+              Performance
+            </DropdownItem>
             <DropdownItem divider/>
-              <DropdownItem className="productMenuItem" onClick={()=>{props.history.push('/growth'); setHamburgerOpen(false);}}>
-                Growth
-              </DropdownItem>
+            <DropdownItem className="productMenuItem" onClick={() => {
+              props.history.push('/growth');
+              setHamburgerOpen(false);
+            }}>
+              Growth
+            </DropdownItem>
             <DropdownItem divider/>
-              <DropdownItem className="productMenuItem" onClick={()=>{props.history.push('/productivity'); setHamburgerOpen(false);}}>
-                Productivity
-              </DropdownItem>
+            <DropdownItem className="productMenuItem" onClick={() => {
+              props.history.push('/productivity');
+              setHamburgerOpen(false);
+            }}>
+              Productivity
+            </DropdownItem>
             <DropdownItem divider/>
-              <DropdownItem className="productMenuItem" onClick={()=>{props.history.push('/analytics'); setHamburgerOpen(false);}}>
-                Analytics
-              </DropdownItem>
+            <DropdownItem className="productMenuItem" onClick={() => {
+              props.history.push('/analytics');
+              setHamburgerOpen(false);
+            }}>
+              Analytics
+            </DropdownItem>
             <DropdownItem divider/>
-            <DropdownItem className="productMenuItem" onClick={()=>{props.history.push('/pricing'); setHamburgerOpen(false);}}>
+            <DropdownItem className="productMenuItem" onClick={() => {
+              props.history.push('/pricing');
+              setHamburgerOpen(false);
+            }}>
               Pricing
             </DropdownItem>
           </div>

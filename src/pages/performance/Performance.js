@@ -5,7 +5,8 @@ import OtherHero from "../../components/new/OtherHero";
 const heroCard = {
   title:"Performance ",
   subTitle: "Set goals, measure progress and give real time feedback",
-  imageURL: "assets/images/performance-hero.png"
+  imageURL: "assets/images/performance-hero.png",
+  lowImageURL: "assets/images/performance-hero-low.png"
 }
 const cards = [{
   title: "Goal management",

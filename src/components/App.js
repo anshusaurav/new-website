@@ -13,6 +13,9 @@ import PricingPage from "../pages/Pricing/PricingPage";
 import Header from "./new/Header";
 import Footer from "./new/Footer";
 import {ReactTypeformEmbed} from "react-typeform-embed";
+import SecurityPage from "../pages/Security/SecurityPage";
+import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
+import TermsConditions from "../pages/TermsAndConditions/TermsConditions";
 
 const App = (props) => {
   const typeFormEmbed = useRef(null);
@@ -52,6 +55,15 @@ const App = (props) => {
           </Route>
           <Route path="/analytics">
             <Analytics openTypeForm={() => openTypeForm()}/>
+          </Route>
+          <Route path="/datasecurity">
+            <SecurityPage openTypeForm={() => openTypeForm()}/>
+          </Route>
+          <Route path="/privacypolicy">
+            <PrivacyPolicy/>
+          </Route>
+          <Route path="/terms">
+            <TermsConditions/>
           </Route>
           <Route path="/">
             <Home openTypeForm={() => openTypeForm()}/>

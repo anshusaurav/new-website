@@ -44,21 +44,24 @@ const style = {
 const locationOptions = ["Mumbai", "Bengaluru", "Remote"];
 const teamOptions = ["Creative Team", "Engineering", "Internship"];
 const cards = [
+
   {
-    title: "Creative team",
-    countRoles: 2,
-    roles: [{title: "Brand manager", location: "Mumbai"}, {title: "Graphic designer", location: "Mumbai"}]
+    title: "Design",
+    roles: [{title: "Graphic Design Intern", location: "Remote", url:"https://angel.co/company/thunderpod/jobs/1357209-graphic-designer-intern"}]
   },
   {
     title: "Engineering",
-    countRoles: 2,
-    roles: [{title: "Android engineer", location: "Bengaluru"}, {title: "Backend developer", location: "Bengaluru"}]
+    roles: [{title: "Backend Developer", location: "Remote", url:"https://angel.co/company/thunderpod/jobs/1033227-backend-developer"}]
   },
   {
-    title: "Internship",
-    countRoles: 1,
-    roles: [{title: "Marketing / Operations intern", location: "Bengaluru"}]
-  }
+    title: "Marketing",
+    roles: [{title: "Content & Social Media Manager", location: "Remote", url:"https://angel.co/company/thunderpod/jobs/1033229-content-social-media-manager"},
+      {title: "Email Marketing Manager", location: "Remote", url:"https://angel.co/company/thunderpod/jobs/1357195-email-marketing-manager"}]
+  },
+  {
+    title: "Sales",
+    roles: [{title: "Sales Development Representative", location: "Remote", url:"https://angel.co/company/thunderpod/jobs/1292541-sales-development-representative"}]
+  },
 ]
 const CareersHero = (props) => {
   const {demoClick, card} = props;
@@ -68,39 +71,39 @@ const CareersHero = (props) => {
     <div className="d-flex align-items-center justify-content-between careersPageHero">
       <div className="pageHeroWrapper">
         <div className="heroTitle">{card.title}</div>
-        <div className="careersControlContainer mt-4">
-          <Select
-            name="location"
-            components={{ Placeholder, DropdownIndicator, IndicatorSeparator: () => null }}
-            theme={theme => ({
-              ...theme,
-              borderRadius: 6,
-            })}
-            style={style}
-            value={location}
-            onChange={(val) => {
-              setLocation(val)
-            }}
-            placeholder="Location"
-            options={locationOptions.map(location => ({label: location, value: location}))}
-          />
-          <Select
-            name="team"
-            components={{ Placeholder, DropdownIndicator,  IndicatorSeparator: () => null }}
-            theme={theme => ({
-              ...theme,
-              borderRadius: 6,
-            })}
-            style={style}
-            value={team}
-            onChange={(val) => {
-              setTeam(val)
-            }}
-            placeholder="Team"
-            options={teamOptions.map(team => ({label: team, value: team}))}
-          />
-          <button className="searchCTA">Search</button>
-        </div>
+        {/*<div className="careersControlContainer mt-4">*/}
+        {/*  <Select*/}
+        {/*    name="location"*/}
+        {/*    components={{ Placeholder, DropdownIndicator, IndicatorSeparator: () => null }}*/}
+        {/*    theme={theme => ({*/}
+        {/*      ...theme,*/}
+        {/*      borderRadius: 6,*/}
+        {/*    })}*/}
+        {/*    style={style}*/}
+        {/*    value={location}*/}
+        {/*    onChange={(val) => {*/}
+        {/*      setLocation(val)*/}
+        {/*    }}*/}
+        {/*    placeholder="Location"*/}
+        {/*    options={locationOptions.map(location => ({label: location, value: location}))}*/}
+        {/*  />*/}
+        {/*  <Select*/}
+        {/*    name="team"*/}
+        {/*    components={{ Placeholder, DropdownIndicator,  IndicatorSeparator: () => null }}*/}
+        {/*    theme={theme => ({*/}
+        {/*      ...theme,*/}
+        {/*      borderRadius: 6,*/}
+        {/*    })}*/}
+        {/*    style={style}*/}
+        {/*    value={team}*/}
+        {/*    onChange={(val) => {*/}
+        {/*      setTeam(val)*/}
+        {/*    }}*/}
+        {/*    placeholder="Team"*/}
+        {/*    options={teamOptions.map(team => ({label: team, value: team}))}*/}
+        {/*  />*/}
+        {/*  <button className="searchCTA">Search</button>*/}
+        {/*</div>*/}
         <div className="openingsContainer mt-4 mx-2 mx-md-0">
           {
             cards.map((card, index) => {
@@ -115,7 +118,8 @@ const CareersHero = (props) => {
                             <div className="roleTitle">{role.title}</div>
                             <div className="roleLocation">{role.location}</div>
                           </div>
-                          <button className="applyCTA">Apply</button>
+                          <a className="applyCTA" href={role.url} target="_blank"
+                             rel="noopener noreferrer">Apply</a>
                         </div>
                       )
                     })

@@ -113,7 +113,7 @@ const productLinks = [{name: "Performance", url: "/performance"},
   {name: "Growth", url: "/growth"},
   {name: "Productivity", url: "/productivity"},
   {name: "Analytics", url: "/analytics"},];
-const companyLinks = [{name: "Career", url: "/careers"},
+const companyLinks = [{name: "Careers", url: "/careers"},
   {name: "Contact us", url: "/contactus"},
   {name: "Data security", url: "/datasecurity"}];
 // const productivityLinks = [{name: "Physical wellbeing", url: "https://business.thunderpod.com/physicalWellbeing"},
@@ -156,8 +156,8 @@ const Footer = (props) => {
               <div className="title">Product</div>
               <div className="linkGroupWrapper">
                 {
-                  productLinks.map(link => (
-                    <div>
+                  productLinks.map((link,index) => (
+                    <div key={"footerLink-" + index}>
                       <Link to={link.url} className="footerLink">{link.name}</Link>
                     </div>
                   ))
@@ -168,8 +168,8 @@ const Footer = (props) => {
               <div className="title">Company</div>
               <div className="linkGroupWrapper">
                 {
-                  companyLinks.map(link => (
-                    <div><Link to={link.url} className="footerLink" >{link.name}</Link>
+                  companyLinks.map((link,index) => (
+                    <div key={"footerLink-" + index}><Link to={link.url} className="footerLink" >{link.name}</Link>
                     </div>
                   ))
                 }
@@ -217,14 +217,12 @@ const Footer = (props) => {
         <div className="footerExtra">
           <div className="footerExtraWrapper">
             <div className="footerExtraLinkContainer">
-              <a className="footerExtraLink" href="https://thunderpod.com/privacy_policy.html" target="_blank"
-                 rel="noopener noreferrer">Privacy policy</a>
+              <Link className="footerExtraLink" to="/privacypolicy">Privacy policy</Link>
               &nbsp;&nbsp;|&nbsp;&nbsp;
-              <a className="footerExtraLink" href="https://thunderpod.com/terms_2020-06-16.html" target="_blank"
-                 rel="noopener noreferrer">Terms of service</a>
+              <Link className="footerExtraLink" to="/terms">Terms of service</Link>
             </div>
             <div className="footerExtraCopyrightContainer">
-              Copyright © 2021 Highfox Private Limited.
+               © Copyright 2021. All Rights Reserved.
             </div>
           </div>
         </div>

@@ -1,4 +1,10 @@
 import React from "react"
+import {Link} from "react-router-dom";
+import {
+  faAngleRight,
+  faCaretRight, faEnvelopeOpen, faMapMarkerAlt,
+} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import "./Features.scss"
 import classNames from "classnames";
 
@@ -19,6 +25,13 @@ const Features = (props) => {
                     <div>
                       <div className="cardTitle showOnMd">{card.title}</div>
                       <div className="cardSubTitle">{card.subTitle}</div>
+                      {
+                        page==="Home" && (
+                          <Link className="featureMoreCTA d-flex align-items-center justify-content-center justify-content-md-start" to={card.url}>More&nbsp;
+                            <FontAwesomeIcon icon={faAngleRight}/>
+                          </Link>
+                        )
+                      }
                     </div>
                   </div>
                   <div className="orderImage">
@@ -35,6 +48,13 @@ const Features = (props) => {
                     <div>
                       <div className="cardTitle showOnMd">{card.title}</div>
                       <div className="cardSubTitle">{card.subTitle}</div>
+                      {
+                        page==="Home" && (
+                          <Link className="featureMoreCTA  d-flex align-items-center justify-content-center justify-content-md-start" to={card.url}>More&nbsp;
+                            <FontAwesomeIcon icon={faAngleRight}/>
+                          </Link>
+                        )
+                      }
                     </div>
                   </div>
                 </div>
@@ -45,7 +65,7 @@ const Features = (props) => {
       </div>
       <div className="preFooterCTAContainer">
         <div className="title">Maximize your
-          workplace {page === "Home"||"Analytics" ? "ROI":page}
+          workplace {page === "Home"||page ==="Analytics" ? "ROI":page}
         </div>
         <div className="CTAWrapper mt-4">
           <button className="demoCTA showOnMd" onClick={() => demoClick()}>Request a demo</button>
