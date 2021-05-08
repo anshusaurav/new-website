@@ -97,6 +97,7 @@ const Header = (props) => {
                   }}>
                     Analytics
                   </DropdownItem>
+                  <div className="topArrow"></div>
                 </DropdownMenu>
               </Dropdown>
               {/*<div className="headerMenuOption">Products&nbsp;<FontAwesomeIcon icon={faCaretDown}/></div>*/}
@@ -112,6 +113,7 @@ const Header = (props) => {
                  rel="noopener noreferrer">Sign in</a>
             </div>
           </div>
+
           <HamburgerMenu className="showOnMd hamburgerMenu"
                          isOpen={hamburgerOpen}
                          menuClicked={() => {

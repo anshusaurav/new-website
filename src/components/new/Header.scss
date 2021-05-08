@@ -42,6 +42,8 @@
           text-align: left;
           color: #1F2C38;
           text-decoration: none;
+
+
         }
         @media only screen and (max-width: 991px) {
           grid-gap: 30px;
@@ -50,10 +52,22 @@
           display: none;
         }
         .productDropdownMenu{
+          width: 240px;
+          .topArrow{
+            position: absolute;
+            top: -20px;
+            left: 114px;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            transform:  rotate(90deg) ;
+            border-right: 12px solid rgba(0, 0, 0, 0.075);
+          }
+        }
+        .productDropdownMenu{
 
           border-radius: 12px;
-          top: -2px !important;
-          left: -48px !important;
+          top: 4px !important;
+          left: -40px !important;
           .productMenuItem{
             outline: none;
             &:active{
