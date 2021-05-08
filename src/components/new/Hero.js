@@ -2,7 +2,7 @@ import React, {} from "react"
 import "./Hero.scss"
 import TypeAnimation from 'react-type-animation';
 import ProgressiveImage from "react-progressive-image";
-const textArray = ['Performance', 'Growth', 'Productivity'];
+// const textArray = ['Performance', 'Growth', 'Productivity'];
 const Hero = (props) => {
 
   // const [textIdx, setTextIdx] = useState(0);

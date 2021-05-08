@@ -109,7 +109,7 @@ const CareersHero = (props) => {
             cards.map((card, index) => {
               return (
                 <>
-                  <div className="openingCategoryTitle mb-2 mt-5 mx-2 mx-md-0">{card.title}</div>
+                  <div className="openingCategoryTitle mb-1 mt-5 mx-2 mx-md-0 pt-3">{card.title}</div>
                   {
                     card.roles.map((role, index) => {
                       return (

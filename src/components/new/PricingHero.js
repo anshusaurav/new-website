@@ -146,11 +146,12 @@ const PricingHero = (props) => {
                       }
 
                     <div className="d-flex justify-content-center mt-3 mt-md-5">
-                      <button className="getStartedCTA" onClick={(e)=>{
+                      <button className="getStartedCTA showOnMd" onClick={(e)=>{
                         e.stopPropagation();
                         openTypeForm();
-                        console.log('Hello');
                       }}>Get started</button>
+                      <a className="getStartedCTA hideOnMd" href="https://v5uyd32e1lw.typeform.com/to/ZhBatJna" target="_blank"
+                         rel="noopener noreferrer">Get Started</a>
                     </div>
                     </div>
                   </div>
