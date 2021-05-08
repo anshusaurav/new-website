@@ -14,7 +14,6 @@ const OtherHero = (props) => {
         </div>
         <div className="imageContainer">
           <ProgressiveImage
-            delay={3000}
             src={card.imageURL}
             placeholder={card.lowImageURL}
             className="w-100"
