@@ -19,7 +19,7 @@ const SecurityMain = (props) =>{
                   <div className="featuresDescription orderText">
                     <div>
                       <div className="cardTitle">{card.title}</div>
-                      <div className="cardSubTitle mt-1 mt-sm-3">{card.subTitle}</div>
+                      <div className="cardSubTitle mt-1">{card.subTitle}</div>
                     </div>
                   </div>
                 </div>

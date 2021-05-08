@@ -30,17 +30,17 @@ const TermsMain = (props) => {
           of the date of the modification. IF YOU DO NOT AGREE TO THESE TERMS, YOU MUST CEASE USING THE SERVICES.
         </div>
 
-        <ol className="mb-4 darkGrey">
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20">Thunderpod Services
+          <ol className="mb-4 darkGrey numeric-list-style">
+          <li className="mb-4">
+            <div className="mb-4 font-weight-bolder f20">Thunderpod Services
             </div>
             <ol className="alpha-braces mb-4 ">
-              <li className="mb-2 f16"> Services. Thunderpod provides a performance management system and also offers
+              <li className="mb-4 f16"> Services. Thunderpod provides a performance management system and also offers
                 health & fitness solutions among other services and related mobile apps (<b>"Mobile Apps"</b>), as
                 further described at https://thunderpod.com/ and other websites where this Agreement is posted
                 (collectively, the <b>"Services"</b>).
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Account Setup. When you set up an account or have an account set up for you (<b>"Thunderpod Account"</b>)
                 to use the Services, you will be required to choose a password and user ID and will be required to
                 provide other registration information (collectively, <b>"Registration Information"</b>). You agree and
@@ -51,7 +51,7 @@ const TermsMain = (props) => {
                 any time. However, Thunderpod has no obligation to verify the accuracy, currency, completeness, or
                 usefulness of any Registration Information that you have provided.
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Thunderpod Account Credentials. You understand that you are responsible for maintaining the
                 confidentiality of the username, password and any other authentication credentials for your Thunderpod
                 Account and those of any users you authorize under your Thunderpod Account (<b>"Permitted Users"</b>),
@@ -67,7 +67,7 @@ const TermsMain = (props) => {
                 responsible to Thunderpod for the conduct, acts and omissions of your Permitted Users and will ensure
                 that your Permitted Users comply with this Agreement.
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Professional Services; Statements of Work for Professional Services; Change Orders. Subject to the terms
                 and conditions of this Agreement, Thunderpod may perform implementation, integration, training or other
                 professional services for you, all of which will be considered Services where applicable under this
@@ -80,7 +80,7 @@ const TermsMain = (props) => {
                 or discontinued by you, Thunderpod may suspend performance of professional services under such Statement
                 of Work.
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Free Trials and Free Services. From time to time, Thunderpod may offer trials of certain versions of the
                 Services for a specified period of time free of charge (each, a “Free Trial”) or may offer a tier of the
                 Services free of charge (<b>"Free Services"</b>). If you register on our website for a Free Trial, we
@@ -102,13 +102,13 @@ const TermsMain = (props) => {
               </li>
             </ol>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20">Fees and Payment
+          <li className="mb-4">
+            <div className="mb-4 font-weight-bolder f20">Fees and Payment
             </div>
             <ol className="alpha-braces mb-4 ">
-              <li className="mb-2 f16"> Election and Fees.
+              <li className="mb-4 f16"> Election and Fees.
                 <ol className="roman-braces mb-4">
-                  <li className="mb-2 f16">
+                  <li className="mb-4 f16">
                     The fees for the Services are set forth on the Thunderpod pricing page (<b>"Pricing Page"</b>) or
                     on an executed Order Form or Statement of Work between you and Thunderpod, each of which is
                     incorporated into and made a part of this Agreement. Fees for the Services may be payable in
@@ -119,7 +119,7 @@ const TermsMain = (props) => {
                     related taxes (including sales and use taxes, duties or other governmental taxes or fees), all of
                     which are your responsibility and will be charged to your Payment Method in addition to the fees.
                   </li>
-                  <li className="mb-2 f16">
+                  <li className="mb-4 f16">
                     Fees for subscription-based Services will be invoiced to you or charged to your Payment Method on
                     the day your Services plan selection goes into effect and will cover fees for your Services plan
                     selection for the payment period indicated. Fees for other Services will be charged according to
@@ -135,7 +135,7 @@ const TermsMain = (props) => {
                     fee increases. If applicable, you hereby authorize Thunderpod to charge your Payment Method for
                     such recurring charges.
                   </li>
-                  <li className="mb-2 f16">
+                  <li className="mb-4 f16">
                     You may upgrade, downgrade or terminate your Subscription Services plan selection at any time.
                     Plan downgrades and terminations will take effect only at the end of your current term and must be
                     made at least 30 days prior to the start of your next renewal Subscription Term in order to avoid
@@ -146,7 +146,7 @@ const TermsMain = (props) => {
                   </li>
                 </ol>
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Payment Method. Thunderpod may, from time to time, offer various expedited payment methods, including
                 payment by credit card, debit card, or direct debit. If you select such a payment method when purchasing
                 the Services or provide such a payment method on an Order Form or Statement of Work (the “Payment
@@ -158,7 +158,7 @@ const TermsMain = (props) => {
                 to directly pay all amounts due upon demand from Thunderpod. Your non-termination or continued use of
                 the Services reaffirms that Thunderpod is authorized to charge your Payment Method.
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Payment Matters. If your Payment Method fails or your account is past due, Thunderpod reserves the right
                 to either suspend or terminate your use of the Services. If Thunderpod has agreed to issue invoices to
                 you, payment of all invoices is due within 14 days of invoice receipt. You agree to submit in writing to
@@ -177,11 +177,11 @@ const TermsMain = (props) => {
               </li>
             </ol>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20">Certain Customer Responsibilities and Additional Requirements
+          <li className="mb-4">
+            <div className="mb-4 font-weight-bolder f20">Certain Customer Responsibilities and Additional Requirements
             </div>
             <ol className="alpha-braces mb-4 ">
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Grant of License. As between you and Thunderpod, and except as otherwise expressly stated in this
                 Agreement, you will own and retain all rights, title, and interest in and to all data, information,
                 text, graphics, images, links, and all other content and materials submitted by you or on your behalf,
@@ -192,7 +192,7 @@ const TermsMain = (props) => {
                 transfer, publish, display, compile, create derivative works of and otherwise exploit, the Customer
                 Content for purposes of providing, developing and improving the Services and operating our business.
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Responsibility and Use of Customer Content. You are solely responsible (and assume all liability and
                 risk) for determining whether or not Customer Content is legal, appropriate or acceptable, and whether
                 you have the right to provide, access and use such content and grant to Thunderpod and its suppliers the
@@ -207,7 +207,7 @@ const TermsMain = (props) => {
                 and privileges for any of your Permitted Users.
 
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Copyright Policy. Thunderpod honors and recognizes copyright law and expects all customers and users of
                 the Services to comply as well. Thunderpod reserves the right to terminate the account of any customer
                 or user who continuously violates or is believed to be continuously violating the rights of copyright
@@ -216,11 +216,11 @@ const TermsMain = (props) => {
               </li>
             </ol>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20">Thunderpod Intellectual Property
+          <li className="mb-4">
+            <div className="mb-4 font-weight-bolder f20">Thunderpod Intellectual Property
             </div>
             <ol className="alpha-braces mb-4 ">
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Ownership of Thunderpod IP. Thunderpod and its licensors will own and retain all rights, title, and
                 interest in and to the Services and all materials therein, including software (including Mobile Apps, as
                 defined below, and any other necessary software used in connection with the Services), Java applets,
@@ -230,7 +230,7 @@ const TermsMain = (props) => {
                 Statement of Work (collectively, “Thunderpod IP”). <b>"Documentation"</b> means any user documentation,
                 on any media, provided by Thunderpod for use with the Services.
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Limited License. During the term of this Agreement, and as applicable to the Services you purchase, you
                 are granted a limited, revocable, non-exclusive, non-transferable, non-sublicensable license to access
                 and use the Services (including Mobile Apps) and Documentation for your internal business purposes,
@@ -238,7 +238,7 @@ const TermsMain = (props) => {
                 any scope restrictions or limitations for the Services you purchase.
 
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Restrictions. You agree that you will not (i) copy, modify, publish, adapt, create derivative works of,
                 sublicense, translate, sell, distribute, transmit, perform, display, reverse engineer, decipher,
                 decompile or otherwise disassemble any portion of the Services (including Mobile Apps) or other
@@ -267,7 +267,7 @@ const TermsMain = (props) => {
                 the Services, Documentation and other Thunderpod IP, and use reasonable efforts to prevent any such
                 unauthorized use of the Services, Documentation and other Thunderpod IP.
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Reservation of Rights. Unless explicitly stated herein, nothing in this Agreement will be construed as
                 conferring any license to intellectual property rights, whether by estoppel, implication or otherwise.
                 Thunderpod reserves all rights not expressly granted herein in the Services (including Mobile Apps) and
@@ -275,11 +275,11 @@ const TermsMain = (props) => {
               </li>
             </ol>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20">Communicating with you Electronically—Permission to Text
+          <li className="mb-4">
+            <div className="mb-4 font-weight-bolder f20">Communicating with you Electronically—Permission to Text
             </div>
             <ol className="alpha-braces mb-4 ">
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 You agree and consent to our communicating information, notices, messages, service alerts,
                 announcements, agreements, privacy notices, disclosures or other communications (“Electronic
                 Communications”) associated with the Services to you and Permitted Users electronically by posting such
@@ -288,7 +288,7 @@ const TermsMain = (props) => {
                 text message to the mobile number on file in the relevant Thunderpod Account.
 
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Unless and until you opt-out of receipt of Electronic Communications via SMS text messaging, you
                 expressly give us permission to send you text messages to your and Permitted Users’ mobile devices. You
                 acknowledge and understand that such text messages may cause you and Permitted Users to incur charges
@@ -297,7 +297,7 @@ const TermsMain = (props) => {
                 Privacy Policy and other communications Thunderpod may desire to send.
 
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Electronic Communications are deemed to be received – at the latest – when they are sent to you or
                 Permitted Users at the last email address or wireless phone number provided to us. You will ensure that
                 your and Permitted Users’ email address and wireless phone number will be kept up to date in order that
@@ -305,8 +305,8 @@ const TermsMain = (props) => {
               </li>
             </ol>
           </li>
-          <li className="mb-4">
-            <div className="mb-2 font-weight-bolder f20">Trademarks
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20">Trademarks
             </div>
             “Thunderpod”, Thunderpod’s logos and any other trade name or slogan contained in or used in connection with
             the Services are trademarks or service marks of Thunderpod, its partners or its licensors and may not be
@@ -319,8 +319,8 @@ const TermsMain = (props) => {
             any products, services, processes or other information, by trade name, trademark, manufacturer, supplier or
             otherwise does not constitute or imply endorsement, sponsorship or recommendation thereof by Thunderpod.
           </li>
-          <li className="mb-4">
-            <div className="mb-2 font-weight-bolder f20">Compliance with Laws
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20">Compliance with Laws
             </div>
             You agree that you will use the Services and provide, access and use Customer Content in compliance with all
             applicable local, state, national and international laws, rules and regulations. You will not, will not
@@ -336,11 +336,11 @@ const TermsMain = (props) => {
             to determine whether a violation of this Agreement has occurred or to comply with any applicable law,
             regulation, legal process, or governmental request.
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20">Confidential Information
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20">Confidential Information
             </div>
             <ol className="alpha-braces mb-4 ">
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Definition. <b>"Confidential Information"</b> means non-public business information, know-how, and trade
                 secrets in any form, including information regarding our product plans, security practices and policies,
                 and any other information a reasonable person should understand to be confidential, which is disclosed
@@ -355,7 +355,7 @@ const TermsMain = (props) => {
                 the receiving party from a third party without a breach of the third party’s obligations of
                 confidentiality.
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Maintenance of Confidentiality. The party receiving Confidential Information hereunder agrees to take
                 reasonable steps, at least substantially equivalent to the steps it takes to protect its own proprietary
                 information, but not less than reasonable care, to prevent the unauthorized duplication or disclosure of
@@ -370,7 +370,7 @@ const TermsMain = (props) => {
                 information from public disclosure.
 
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Return of Materials and Effect of Termination. Upon a written request of the disclosing party, or in any
                 event upon any termination or expiration of this Agreement, the receiving party will return to the
                 disclosing party or destroy all materials, in any medium, to the extent containing or reflecting any of
@@ -383,15 +383,15 @@ const TermsMain = (props) => {
                 Information that constitutes a trade secret of the disclosing party will continue to be subject to the
                 terms of this Section 9 for as long as such information remains a trade secret under applicable law.
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Privacy Policy. Thunderpod collects personal and other information in connection with the Services. By
                 using the Services, you agree to be bound by the terms of our Privacy Policy.
               </li>
 
             </ol>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Online Store Terms
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Online Store Terms
             </div>
             By agreeing to these Terms of Service, you represent that you are at least the age of
             majority in your state or province of residence, or that you are the age of majority in your state or
@@ -406,8 +406,8 @@ const TermsMain = (props) => {
             A breach or violation of any of the Terms will result in an immediate termination of your Services.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> General Conditions
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> General Conditions
             </div>
             We reserve the right to refuse service to anyone for any reason at any time.
             You understand that your content (not including credit card information), may be transferred unencrypted and
@@ -423,8 +423,8 @@ const TermsMain = (props) => {
             these Terms.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Accuracy, Completeness and Timeliness of Information
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Accuracy, Completeness and Timeliness of Information
             </div>
             We are not responsible if information made available on this site is not accurate, complete or current. The
             material on this site is provided for general information only and should not be relied upon or used as the
@@ -437,8 +437,8 @@ const TermsMain = (props) => {
             responsibility to monitor changes to our site.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Modifications To The Service And Prices
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Modifications To The Service And Prices
             </div>
             Prices for our products are subject to change without notice.
             <br/>
@@ -449,8 +449,8 @@ const TermsMain = (props) => {
             discontinuance of the Service.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Products or Services
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Products or Services
             </div>
             Certain products or services may be available exclusively online through the application. These products or
             services may have limited quantities and are subject to return or exchange only according to our Return
@@ -471,8 +471,8 @@ const TermsMain = (props) => {
             obtained by you will meet your expectations, or that any errors in the Service will be corrected.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Accuracy of Billing and Account Information
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Accuracy of Billing and Account Information
             </div>
             We reserve the right to refuse any order you place with us. We may, in our sole discretion, limit or cancel
             quantities purchased per person, per household or per order. These restrictions may include orders placed by
@@ -489,8 +489,8 @@ const TermsMain = (props) => {
             For more detail, please review our Returns Policy.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Optional Tools
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Optional Tools
             </div>
             We may provide you with access to third-party tools over which we neither monitor nor have any control nor
             input.
@@ -507,8 +507,8 @@ const TermsMain = (props) => {
             of Service.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Third-Party Links
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Third-Party Links
             </div>
             Certain content, products and services available via our Service may include materials from third-parties.
             <br/>
@@ -524,8 +524,8 @@ const TermsMain = (props) => {
             directed to the third-party.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> User Comments, Feedback and Other Submissions
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> User Comments, Feedback and Other Submissions
 
             </div>
             If, at our request, you send certain specific submissions (for example contest entries) or without a request
@@ -552,15 +552,15 @@ const TermsMain = (props) => {
             appstore then we have the right to call you and resolve the issue.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Personal Information
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Personal Information
             </div>
             Your submission of personal information through the store is governed by our Privacy Policy. View our
             Privacy Policy.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Errors, Inaccuracies and Omissions
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Errors, Inaccuracies and Omissions
             </div>
             Occasionally there may be information on our site or in the Service that contains typographical errors,
             inaccuracies or omissions that may relate to product descriptions, pricing, promotions, offers, product
@@ -575,8 +575,8 @@ const TermsMain = (props) => {
             that all information in the Service or on any related application has been modified or updated.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Prohibited Uses
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Prohibited Uses
             </div>
             In addition to other prohibitions as set forth in the Terms of Service, you are prohibited from using the
             site or its content: (a) for any unlawful purpose; (b) to solicit others to perform or participate in any
@@ -593,8 +593,8 @@ const TermsMain = (props) => {
             of the Service or any related application for violating any of the prohibited uses.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Disclaimers; No Warranties
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Disclaimers; No Warranties
             </div>
             THE SERVICES ARE PROVIDED ON AN “AS IS'' AND “AS AVAILABLE” BASIS. EXCEPT AS EXPRESSLY SET FORTH HEREIN,
             THUNDERPOD AND ITS AFFILIATES AND SUBSIDIARIES MAKE NO WARRANTY, EXPRESS, IMPLIED, STATUTORY OR OTHERWISE
@@ -608,8 +608,8 @@ const TermsMain = (props) => {
             REPLACE ANY SERVICES.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Disclaimer of Warranties; Limitation of Liability
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Disclaimer of Warranties; Limitation of Liability
             </div>
             We do not guarantee, represent or warrant that your use of our service will be uninterrupted, timely, secure
             or error-free.
@@ -640,8 +640,8 @@ const TermsMain = (props) => {
             the maximum extent permitted by law.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Indemnification
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Indemnification
             </div>
             You agree to indemnify, defend and hold harmless Thunderpod private limited and our parent, subsidiaries,
             affiliates, partners, officers, directors, agents, contractors, licensors, service providers,
@@ -650,14 +650,14 @@ const TermsMain = (props) => {
             the documents they incorporate by reference, or your violation of any law or the rights of a third-party.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20">  Severability and Waiver
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20">  Severability and Waiver
             </div>
             In the event that any provision of these Terms of Service is determined to be unlawful, void or unenforceable, such provision shall nonetheless be enforceable to the fullest extent permitted by applicable law, and the unenforceable portion shall be deemed to be severed from these Terms of Service, such determination shall not affect the validity and enforceability of any other remaining provisions. Thunderpod’s failure to exercise or enforce any right or provision of the Agreement shall not constitute a waiver of such right or provision.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Termination
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Termination
             </div>
             The obligations and liabilities of the parties incurred prior to the termination date shall survive the termination of this agreement for all purposes.
             <br/>
@@ -665,8 +665,8 @@ const TermsMain = (props) => {
             <br/>
             If in our sole judgment you fail, or we suspect that you have failed, to comply with any term or provision of these Terms of Service, we also may terminate this agreement at any time without notice and you will remain liable for all amounts due up to and including the date of termination; and/or accordingly may deny you access to our Services (or any part thereof).
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Entire Agreement
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Entire Agreement
             </div>
             The failure of us to exercise or enforce any right or provision of these Terms of Service shall not constitute a waiver of such right or provision.<br/>
            <br/>
@@ -674,37 +674,37 @@ const TermsMain = (props) => {
             Any ambiguities in the interpretation of these Terms of Service shall not be construed against the drafting party.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Grievance Redressal and Governing Law, Arbitration, And Class Action/Jury Trial Waiver
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Grievance Redressal and Governing Law, Arbitration, And Class Action/Jury Trial Waiver
             </div>
             <ol className="alpha-braces mb-4 ">
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Grievance Redressal. Thunderpod respects and is sensitive to the rights as granted in the applicable laws. Any questions about the Terms of Service and/or Privacy Policy including Thunderpod’s Information collection, use and disclosure practices, you may contact by sending an email on support@thunderpod.com. Thunderpod will endeavor to use reasonable efforts to respond promptly to requests, questions or concerns User may have regarding the use of Information.
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Governing Law. You agree that the Services shall be deemed solely based in California and this Agreement shall be governed by the laws of the State of California, without respect to its conflict of laws principles. You agree to submit to the personal jurisdiction of the state or federal courts in and for King County, California, for any actions for which we retain the right to seek injunctive or other equitable relief in a court of competent jurisdiction, as set forth in the Arbitration provision below. You agree that King County, California is the proper forum for any appeals of an arbitration award or for trial court proceedings in the event that the arbitration provision below is found to be unenforceable.
 
 
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Arbitration. READ THIS PARAGRAPH CAREFULLY BECAUSE IT REQUIRES THE PARTIES TO ARBITRATE THEIR DISPUTES AND LIMITS THE MANNER IN WHICH YOU CAN SEEK RELIEF FROM THUNDERPOD. For any dispute with Thunderpod arising out of or relating in any way to this Agreement (including the Privacy policy and any Statements of Work or Order Forms), you agree to first contact us by sending a prior written notice via email on  support@thunderpod.com and attempt to resolve the dispute with us through good faith discussions. In the unlikely event that we have not been able to resolve a dispute after 60 days of receiving written notice including details of concern or dispute, we each agree to resolve any claim, dispute or controversy (excluding any claims for injunctive or other equitable relief as provided below) arising out of or relating in any way to this Agreement  (including the Privacy policy and any Statements of Work or Order Forms) (collectively, “Claims”), by binding arbitration by JAMS, under the Optional Expedited Arbitration Procedures then in effect for JAMS, except as provided herein. JAMS may be contacted at www.jamsadr.com. The arbitration will be conducted in Seattle, California, unless you and Thunderpod agree otherwise. Each party will be responsible for paying any JAMS filing, administrative and arbitrator fees in accordance with JAMS rules, and the award rendered by the arbitrator shall include costs of arbitration, reasonable attorneys’ fees and reasonable costs for expert and other witnesses. Any judgment on the award rendered by the arbitrator may be entered in any court of competent jurisdiction. Nothing in this paragraph shall be deemed as preventing either you or Thunderpod from seeking injunctive or other equitable relief from the courts as necessary to prevent the actual or threatened infringement, misappropriation or other violation of either party’s confidential information or intellectual property or other proprietary rights.
               </li>
-              <li className="mb-2 f16">
+              <li className="mb-4 f16">
                 Class Action/Jury Trial Waiver. ALL CLAIMS MUST BE BROUGHT IN THE PARTIES’ INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS ACTION, COLLECTIVE ACTION, PRIVATE ATTORNEY GENERAL ACTION OR OTHER REPRESENTATIVE PROCEEDING. THIS WAIVER APPLIES TO CLASS ARBITRATION, AND, UNLESS WE AGREE OTHERWISE, THE ARBITRATOR MAY NOT CONSOLIDATE MORE THAN ONE PERSON’S CLAIMS. YOU AGREE THAT BY ENTERING INTO THIS AGREEMENT, YOU AND THUNDERPOD ARE EACH WAIVING THE RIGHT TO A TRIAL BY JURY OR TO PARTICIPATE IN A CLASS ACTION, COLLECTIVE ACTION, PRIVATE ATTORNEY GENERAL ACTION OR OTHER REPRESENTATIVE PROCEEDING OF ANY KIND.
               </li>
 
             </ol>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Entire Agreement
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Entire Agreement
             </div>
             You can review the most current version of the Terms of Service at any time at this page.
             <br/>
             We reserve the right, at our sole discretion, to update, change or replace any part of these Terms of Service by posting updates and changes to our application. It is your responsibility to check our application periodically for changes. Your continued use of or access to our application or the Service following the posting of any changes to these Terms of Service constitutes acceptance of those changes.
             <br/>
           </li>
-          <li className="mb-2">
-            <div className="mb-2 font-weight-bolder f20"> Contact Information
+          <li className="mb-4 f16">
+            <div className="mb-4 font-weight-bolder f20"> Contact Information
             </div>
             Questions about the Terms of Service or Privacy Policy should be sent to us at support@thunderpod.com.
             <br/>
