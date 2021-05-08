@@ -60,7 +60,8 @@ const Header = (props) => {
                 setDropdownOpen(true);
               }}
                         onMouseLeave={() => {
-                setDropdownOpen(false);}}
+                          setDropdownOpen(false);
+                        }}
               >
                 <DropdownToggle className="bg-white border-0">
                   <div className="headerMenuOption">
@@ -68,7 +69,7 @@ const Header = (props) => {
                     <FontAwesomeIcon
                       className="ml-2"
                       color="#000"
-                      icon={dropdownOpen?faCaretDown:faCaretDown}
+                      icon={dropdownOpen ? faCaretDown : faCaretDown}
                     />
                   </div>
                 </DropdownToggle>

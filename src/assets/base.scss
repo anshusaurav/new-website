@@ -589,3 +589,8 @@ ol.roman-braces > li:before {
   position: absolute;
   left: -1.75em;
 }
+
+ol.numeric-list-style > li:before{
+  font-size: 20px;
+  color: #000 !important;
+}

@@ -156,7 +156,7 @@ const Footer = (props) => {
               <div className="title">Product</div>
               <div className="linkGroupWrapper">
                 {
-                  productLinks.map((link,index) => (
+                  productLinks.map((link, index) => (
                     <div key={"footerLink-" + index}>
                       <Link to={link.url} className="footerLink">{link.name}</Link>
                     </div>
@@ -168,8 +168,18 @@ const Footer = (props) => {
               <div className="title">Company</div>
               <div className="linkGroupWrapper">
                 {
-                  companyLinks.map((link,index) => (
-                    <div key={"footerLink-" + index}><Link to={link.url} className="footerLink" >{link.name}</Link>
+                  companyLinks.map((link, index) => (
+                    <div key={"footerLink-" + index}>
+                      {link.name === "Contact us" ? (
+                        <a className="footerLink" href="https://v5uyd32e1lw.typeform.com/to/ZhBatJna" target="_blank"
+                           rel="noopener noreferrer">
+                          {link.name}
+                        </a>) : (
+                          <Link to={link.url} className="footerLink">
+                            {link.name}
+                          </Link>
+                        )
+                      }
                     </div>
                   ))
                 }
@@ -222,7 +232,7 @@ const Footer = (props) => {
               <Link className="footerExtraLink" to="/terms">Terms of service</Link>
             </div>
             <div className="footerExtraCopyrightContainer">
-               © Copyright 2021. All Rights Reserved.
+              © Copyright 2021. All Rights Reserved.
             </div>
           </div>
         </div>
