@@ -1,5 +1,6 @@
-import React, {useRef} from 'react';
-import {Switch, Route} from 'react-router-dom'
+import React, {useRef, useState, useEffect } from 'react';
+import {Switch, Route,withRouter} from 'react-router-dom'
+import ReactPixel from 'react-facebook-pixel';
 import './App.css';
 import Home from '../pages/home/home'
 import Performance from "../pages/performance/Performance";
@@ -12,52 +13,44 @@ import CareerPage from "../pages/Career/CareerPage";
 import PricingPage from "../pages/Pricing/PricingPage";
 import Header from "./new/Header";
 import Footer from "./new/Footer";
-import {ReactTypeformEmbed} from "react-typeform-embed";
 import SecurityPage from "../pages/Security/SecurityPage";
 import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
 import TermsConditions from "../pages/TermsAndConditions/TermsConditions";
-
+import CookieConsent, { Cookies } from "react-cookie-consent";
+import Work from "../pages/Work/Work";
 const App = (props) => {
-  const typeFormEmbed = useRef(null);
-  const openTypeForm = () => {
-    if (typeFormEmbed && typeFormEmbed.current && typeFormEmbed.current.typeform) {
-      typeFormEmbed.current.typeform.open();
-    }
-  }
+  useEffect(()=>{
+    // ReactPixel.revokeConsent();
+    ReactPixel.init('194650262549882');
+  },[]);
+  useEffect(()=>{
+    ReactPixel.track('PageView', props.location);
+  },[props.location])
   return (
     <div>
       <div className="pageBody">
-        <Header demoClick={openTypeForm}/>
+        <Header />
         <Switch>
-          <Route exact path="/performance">
-            <Performance openTypeForm={() => openTypeForm()}/>
+          <Route exact path="/work">
+            <Work/>
           </Route>
-          <Route path="/growth">
-            <Growth openTypeForm={() => openTypeForm()}/>
-          </Route>
-          <Route path="/productivity">
-            <Productivity openTypeForm={() => openTypeForm()}/>
-          </Route>
-          <Route path="/productivity">
-            <Analytics openTypeForm={() => openTypeForm()}/>
+          <Route path="/wellbeing">
+            <Productivity/>
           </Route>
           <Route path="/contactus">
-            <ContactUs openTypeForm={() => openTypeForm()}/>
+            <ContactUs/>
           </Route>
           <Route path="/requestdemo">
-            <RequestDemo openTypeForm={() => openTypeForm()}/>
+            <RequestDemo />
           </Route>
           <Route path="/careers">
-            <CareerPage openTypeForm={() => openTypeForm()}/>
+            <CareerPage />
           </Route>
           <Route path="/pricing">
-            <PricingPage openTypeForm={() => openTypeForm()}/>
-          </Route>
-          <Route path="/analytics">
-            <Analytics openTypeForm={() => openTypeForm()}/>
+            <PricingPage />
           </Route>
           <Route path="/datasecurity">
-            <SecurityPage openTypeForm={() => openTypeForm()}/>
+            <SecurityPage />
           </Route>
           <Route path="/privacypolicy">
             <PrivacyPolicy/>
@@ -66,19 +59,27 @@ const App = (props) => {
             <TermsConditions/>
           </Route>
           <Route path="/">
-            <Home openTypeForm={() => openTypeForm()}/>
+            <Home />
           </Route>
         </Switch>
         <Footer/>
-        <ReactTypeformEmbed
-          popup={true}
-          autoOpen={false}
-          url="https://v5uyd32e1lw.typeform.com/to/ZhBatJna"
-          style={{top: 100}}
-          ref={typeFormEmbed}
-        />
+        {/*<CookieConsent*/}
+        {/*  onAccept={() => {*/}
+        {/*    ReactPixel.grantConsent();*/}
+        {/*    ReactPixel.track('PageView', props.location);*/}
+        {/*  }}*/}
+        {/*  debug={true}*/}
+        {/*  enableDeclineButton*/}
+        {/*  declineButtonText="Decline"*/}
+        {/*  // onDecline={() => {*/}
+        {/*  //   alert("nay!");*/}
+        {/*  // }}*/}
+        {/*>*/}
+        {/*  This website uses cookies to enhance the user experience.*/}
+
+        {/*</CookieConsent>*/}
       </div>
     </div>
   )
 }
-export default App;
+export default withRouter(App);

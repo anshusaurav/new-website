@@ -2,8 +2,6 @@
   padding: 40px 55px;
   background-color: #FFECEB;
   color: #000000;
-  position: relative;
-  z-index: 10;
   //min-height: unset;
   @media only screen and (max-width: 767px) {
     padding: 48px 12px;
@@ -14,10 +12,13 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 0px;
+    grid-gap: 24px;
     align-items: stretch;
     @media only screen and (max-width: 1340px) {
       max-width: 100%;
+    }
+    @media only screen and (max-width: 1200px) {
+      grid-gap: 16px;
     }
     @media only screen and (max-width: 767px) {
       grid-template-columns: 1fr;
@@ -26,7 +27,7 @@
   }
   .heroCTAContainer {
     .heroTitle {
-      font-size: 40px;
+      font-size: 36px;
       font-style: normal;
       font-weight: 600;
       line-height: 60px;
@@ -93,7 +94,7 @@
       font-weight: 600;
       line-height: 24px;
       letter-spacing: 0.05em;
-      text-align: left;
+      text-align: center;
       border: none;
       outline: none;
       border-radius: 10px;

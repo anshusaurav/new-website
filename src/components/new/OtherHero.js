@@ -13,15 +13,12 @@ const OtherHero = (props) => {
           </div>
         </div>
         <div className="imageContainer">
-          <ProgressiveImage
+          <img
             src={card.imageURL}
-            placeholder={card.lowImageURL}
+            alt=""
             className="w-100"
             style={{maxWidth: 960}}
-          >
-            {src => <img src={src} alt="" className="w-100"
-                         style={{maxWidth: 960}}/>}
-          </ProgressiveImage>
+          />
         </div>
       </div>
     </div>

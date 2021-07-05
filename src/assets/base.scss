@@ -224,7 +224,9 @@
   color: #697A88;
 }
 
-
+.font-weight-500{
+  font-weight: 500;
+}
 .black {
   color: #000;
 }
@@ -308,7 +310,7 @@
   background-color: #E9F0F6;
 }
 .bgLightGrey {
-  background-color: #F8F9FA;
+  background-color: #F8F8F8;
 }
 .bgWhite {
   background-color: #FFF;
@@ -521,9 +523,9 @@ textarea.formTextArea:-ms-input-placeholder{
     color: rgba(105, 122, 136, 0.51);
 
   }
-  textarea.formTextArea:-ms-input-placeholder{
-    color: rgba(105, 122, 136, 0.51);
-  }
+    textarea.formTextArea:-ms-input-placeholder{
+      color: rgba(105, 122, 136, 0.51);
+    }
 }
 
 

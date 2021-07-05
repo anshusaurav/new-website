@@ -46,7 +46,8 @@
 
         }
         @media only screen and (max-width: 991px) {
-          grid-gap: 30px;
+          padding: 0 16px;
+          grid-gap: 16px;
         }
         @media only screen and (max-width: 767px) {
           display: none;
@@ -66,7 +67,7 @@
         .productDropdownMenu{
 
           border-radius: 12px;
-          top: 4px !important;
+          top: 0px !important;
           left: -40px !important;
           .productMenuItem{
             outline: none;
@@ -100,8 +101,11 @@
 
   .headerCTAContainer {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 12px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 28px;
+    @media only screen and (max-width: 991px) {
+      grid-gap: 12px;
+    }
     @media only screen and (max-width: 767px) {
       display: none;
     }
@@ -116,7 +120,7 @@
       border: none;
       border-radius: 10px;
       color: white;
-      padding: 13px 18px;
+      padding: 12px 18px;
       outline: none;
       text-decoration: none;
       @media only screen and (max-width: 1200px) {
@@ -130,14 +134,25 @@
       }
     }
 
-    .demoCTA {
-      background: #916cf6;
-
+    .simplePurpleCTA {
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+      text-align: left;
+      color: #916CF6 !important;
       &:hover {
-        box-shadow: 0px 4px 15px rgba(145, 108, 246, 0.6);
+        color: rgb(95, 71, 163) !important;
       }
     }
-
+    .demoCTA{
+      background: #916CF6 !important;
+      &:hover {
+        box-shadow: 0px 4px 15px rgba(145, 108, 246, 0.35);
+      }
+    }
     .signInCTA {
       background: #1F2C38;
 
@@ -146,6 +161,18 @@
       }
     }
 
+    .hideOnMd{
+      display: none;
+      @media only screen and (max-width: 767px) {
+        display: block;
+      }
+    }
+    .showOnMd{
+      display: block;
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+    }
   }
 
   .showOnMd {
@@ -258,19 +285,13 @@
       text-align: center;
     }
 
-    .demoCTA {
-      background: #916CF6;
-      &:hover {
-        box-shadow: 0px 4px 15px rgba(145, 108, 246, 0.6);
-      }
-    }
-
     .signInCTA {
       background: #1F2C38;
       &:hover {
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
       }
     }
+
   }
 }
 

@@ -9,7 +9,7 @@ const heroCard = {
   title: "Trust & Security",
   subTitle:"At Thunderpod, we believe that security is at the heart of any best-in-class solution, which is why we" +
     " back ourselves with robust security and privacy practices that help us protect and secure your business data. We understand and respect the trust you place in Thunderpod to maintain your business goals and priorities, rest assured, your security is our top priority.",
-  imageURL: "assets/images/security-hero.png"
+  imageURL: "https://gcdn.thunderpod.com/ThunderpodWebsite/security-hero.png"
 }
 const cards = [{
   title: "Transparency, trust and control",
@@ -18,17 +18,17 @@ const cards = [{
       title:"Identity and access management",
       subTitle: "Ensure that only the right people can access your company’s information in Thunderpod with features" +
         " such as email verification. This is in accordance with the least privilege and the need to know principles.",
-      imageURL: "assets/images/pointers-trust-1.png"
+      imageURL: "https://gcdn.thunderpod.com/ThunderpodWebsite/pointers-trust-1.png"
     },
     {
       title:"Data protection",
       subTitle: "Data is encrypted in transit and at rest by default. We secure your data further with audit logs reviews.",
-      imageURL: "assets/images/pointers-trust-2.png"
+      imageURL: "https://gcdn.thunderpod.com/ThunderpodWebsite/pointers-trust-2.png"
     },
     {
       title:"Identity and access management",
       subTitle: "Inclusive and transparent governance and risk-management capabilities that are flexible enough to meet your organization’s needs, no matter what they are.",
-      imageURL: "assets/images/pointers-trust-3.png"
+      imageURL: "https://gcdn.thunderpod.com/ThunderpodWebsite/pointers-trust-3.png"
     },
   ]
 }, {
@@ -37,17 +37,17 @@ const cards = [{
     {
       title:"Identity and access controls",
       subTitle: "We offer email verification that lets users authenticate themselves.",
-      imageURL: "assets/images/pointers-class-1.png"
+      imageURL: "https://gcdn.thunderpod.com/ThunderpodWebsite/pointers-class-1.png"
     },
     {
       title:"Data encryption",
       subTitle: "All communication is secured by TLS 1.2 or higher encryption, by default. We encrypt all the customer data at rest using industry standard AES256 algorithms. We also store sensitive content as hashed values to further protect your data.",
-      imageURL: "assets/images/pointers-class-2.png"
+      imageURL: "https://gcdn.thunderpod.com/ThunderpodWebsite/pointers-class-2.png"
     },
     {
       title:"Data retention and disposal",
       subTitle: "We retain some customer and usage data in order to fulfill statutory and regulatory requirements, and to meet operational needs. We encrypt and store this data in a database for as long as organizations are valid customers. When customers unsubscribe, their data is completely deleted in accordance with retention policies.",
-      imageURL: "assets/images/pointers-class-3.png"
+      imageURL: "https://gcdn.thunderpod.com/ThunderpodWebsite/pointers-class-3.png"
     },
   ]
 }
@@ -58,17 +58,17 @@ const cards = [{
       {
         title:"Security team",
         subTitle: "Our dedicated security team approaches security holistically based on industry best practices and aligned to a common controls framework. Security threats are prevented using our detections program, secure software development practices, and industry-accepted operational practices.",
-        imageURL: "assets/images/pointers-security-1.png"
+        imageURL: "https://gcdn.thunderpod.com/ThunderpodWebsite/pointers-security-1.png"
       },
       {
         title:"Effective vulnerability management",
         subTitle: "We identify possible security vulnerabilities through penetration tests to ensure we’re constantly improving our application security. Logs are analyzed and suspected activities are immediately reported and handled as security incidents.",
-        imageURL: "assets/images/pointers-security-2.png"
+        imageURL: "https://gcdn.thunderpod.com/ThunderpodWebsite/pointers-security-2.png"
       },
       {
         title:"Incident management & response",
         subTitle: "We identify and close incidents with necessary actions. We will notify you of incidents that apply to you and suitable actions that you need to take.",
-        imageURL: "assets/images/pointers-security-3.png"
+        imageURL: "https://gcdn.thunderpod.com/ThunderpodWebsite/pointers-security-3.png"
       },
     ]
   }]

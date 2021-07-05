@@ -1,0 +1,195 @@
+.newOtherPageHero {
+  padding: 40px 55px;
+  background-color: #F1DEFF;
+  color: #000000;
+  //min-height: unset;
+  @media only screen and (max-width: 767px) {
+    padding: 48px 12px;
+    //min-height: calc(100vh - 63.5px);
+  }
+  .pageHeroWrapper {
+    max-width: 1340px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    align-items: stretch;
+    @media only screen and (max-width: 1340px) {
+      max-width: 100%;
+    }
+    @media only screen and (max-width: 1200px) {
+      grid-gap: 16px;
+    }
+    @media only screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+      grid-gap: 16px;
+    }
+  }
+  .heroCTAContainer {
+    .heroTitle {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 60px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 24px;
+      .heroTitleHighlight {
+        color: #916CF6;
+        font-weight: 700;
+      }
+      @media only screen and (max-width: 1200px) {
+        font-size: 28px;
+        line-height: 42px;
+      }
+      //.messageout-enter {
+      //  opacity: 0.2;
+      //  transition: all 400ms ease-out;
+      //}
+      //.messageout-enter-active {
+      //  opacity: 1;
+      //  transition: all 800ms ease-in;
+      //}
+      ///* starting EXIT animation */
+      //.messageout-exit {
+      //  display: none;
+      //  //width: 0;
+      //  opacity: 0.00;
+      //  transform: scale(1.01);
+      //}
+      @media only screen and (max-width: 767px) {
+        font-size: 28px;
+        line-height: 42px;
+        text-align: center;
+      }
+      @media only screen and (max-width: 575px) {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+      }
+
+    }
+    .heroSubTitle{
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      @media only screen and (max-width: 767px) {
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+      }
+      @media only screen and (max-width: 575px) {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+    .demoCTA{
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+      text-align: center;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      color: white;
+      padding: 12px 20px;
+      background: #1F2C38;
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+      max-width: unset;
+      @media only screen and (max-width: 767px) {
+        display: block;
+        margin: 0 auto;
+        max-width: 184px;
+        padding: 16px 20px;
+      }
+      &:hover{
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+      }
+    }
+    .emailInput{
+      box-sizing: border-box;
+      border-radius: 10px;
+      padding:2px 10px;
+      height: 48px;
+      outline:none;
+      border: 1px solid #F3C9C7;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 400px;
+      &:focus{
+        border: 2px solid #916CF6;
+      }
+    }
+    input.emailInput::-webkit-input-placeholder{
+      text-align: left;
+    }
+    @media (max-width: 767px) {
+      input.emailInput::-webkit-input-placeholder{
+        text-align: center
+      }
+    }
+    input.emailInput::-moz-placeholder{
+      text-align: left;
+    }
+    @media (max-width: 767px) {
+      input.emailInput::-moz-placeholder{
+        text-align: center
+      }
+    }
+    input.emailInput:-moz-placeholder{
+      text-align: left;
+    }
+    @media (max-width: 767px) {
+      input.emailInput:-moz-placeholder{
+        text-align: center
+      }
+    }
+    input.emailInput:-ms-input-placeholder{
+      text-align: left;
+    }
+    @media (max-width: 767px) {
+      input.emailInput:-ms-input-placeholder{
+        text-align: center
+      }
+    }
+    .freeTrialInfo{
+      margin-top: 12px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: left;
+      color:#000000;
+      @media only screen and (max-width: 767px) {
+        text-align: center;
+      }
+    }
+    .hideOnMd{
+      display: none;
+      @media only screen and (max-width: 767px) {
+        display: block;
+      }
+    }
+    .showOnMd{
+      display: block;
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  .imageContainer {
+    display: block;
+
+  }
+}

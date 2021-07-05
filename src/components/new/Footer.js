@@ -109,10 +109,8 @@ import {
   faTwitter
 } from "@fortawesome/free-brands-svg-icons";
 
-const productLinks = [{name: "Performance", url: "/performance"},
-  {name: "Growth", url: "/growth"},
-  {name: "Productivity", url: "/productivity"},
-  {name: "Analytics", url: "/analytics"},];
+const productLinks = [{name: "Work", url: "/work"},
+  {name: "Wellbeing", url: "/wellbeing"}];
 const companyLinks = [{name: "Careers", url: "/careers"},
   {name: "Contact us", url: "/contactus"},
   {name: "Data security", url: "/datasecurity"}];
@@ -129,7 +127,7 @@ const Footer = (props) => {
       <div className="footerContainer">
         <div className="footerGrid">
           <div className="footerFirstSection">
-            <div className="logoContainer" style={{backgroundImage: 'url("assets/images/logo-white.png")'}}>
+            <div className="logoContainer" style={{backgroundImage: 'url("https://gcdn.thunderpod.com/ThunderpodWebsite/logo-white.png")'}}>
             </div>
             <div className="socialsWrapper mt-3 mt-md-0">
               <span>Follow us on</span>
@@ -170,15 +168,10 @@ const Footer = (props) => {
                 {
                   companyLinks.map((link, index) => (
                     <div key={"footerLink-" + index}>
-                      {link.name === "Contact us" ? (
-                        <a className="footerLink" href="https://v5uyd32e1lw.typeform.com/to/ZhBatJna" target="_blank"
-                           rel="noopener noreferrer">
-                          {link.name}
-                        </a>) : (
+                      {
                           <Link to={link.url} className="footerLink">
                             {link.name}
                           </Link>
-                        )
                       }
                     </div>
                   ))

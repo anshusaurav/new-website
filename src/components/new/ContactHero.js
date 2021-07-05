@@ -7,8 +7,13 @@ import {faFacebookF, faInstagram, faLinkedinIn, faTwitter} from "@fortawesome/fr
 
 const contactInfoList = [
   {
-    title: 'Our office',
-    subTitle: '1013 Centre road, Suite 403-B, Wimington, New Castle, Zip Code 19805-1270',
+    title: 'Our US office',
+    subTitle: 'Thunderpod, Inc., 2261 Market Street #4350, San Francisco CA, 94114',
+    icon: faMapMarkerAlt
+  },
+  {
+    title: 'Our India office',
+    subTitle: 'Bungalow no 25, shreesh CHS, Hajuri Darga road Thane, Mumbai, Maharashtra 400604',
     icon: faMapMarkerAlt
   },
   {

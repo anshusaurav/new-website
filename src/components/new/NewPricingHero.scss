@@ -1,0 +1,415 @@
+.pricingPageHero {
+  padding: 64px 32px;
+  background:  #F0DEFF;
+  color: #000;
+  @media only screen and (max-width: 1200px) {
+    padding: 48px 16px;
+  }
+  @media only screen and (max-width: 767px) {
+    padding: 48px 0px;
+    //background: #FFFFFF;
+    //color: #1F2C38;
+  }
+
+  .pageHeroContainer {
+    max-width: 1280px;
+    margin: 0 auto;
+    align-items: stretch;
+
+    @media only screen and (max-width: 1200px) {
+      width: 100%;
+    }
+    @media only screen and (max-width: 767px) {
+      margin: 0;
+    }
+
+    .heroTitle {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 60px;
+      letter-spacing: 0em;
+      text-align: center;
+      margin-bottom: 0px;
+
+      .heroTitleHighlight {
+        color: #916CF6;
+        font-weight: 700;
+        ;
+      }
+
+      @media only screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+
+    .heroSubTitle {
+      font-size: 46px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 70px;
+      letter-spacing: 0em;
+      text-align: center;
+      .pricingTitleHighLight{
+        font-weight: 700;
+        line-height: 58px;
+      }
+      @media only screen and (max-width: 1320px) {
+        font-size: 36px;
+        line-height: 48px;
+      }
+      @media only screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+    .pricingDescription{
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 30px;
+      letter-spacing: 0px;
+      text-align: center;
+      @media only screen and (max-width: 767px) {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+  }
+
+  .pricingNewContainer {
+    .pricingOptionsWrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 32px;
+      align-items: end;
+      @media only screen and (max-width: 1200px) {
+        grid-gap: 20px;
+      }
+      @media only screen and (max-width: 991px) {
+        grid-gap: 16px;
+      }
+      @media only screen and (max-width: 767px) {
+        grid-template-columns: 1fr;
+
+      }
+
+      .pricingOption {
+
+        background: #F8F8F8;
+        border-radius: 30px;
+        padding: 32px 36px;
+        border-bottom: none;
+
+        &:hover {
+          box-shadow: 0px 10px 30px rgba(43, 95, 173, 0.1);
+        }
+
+        @media only screen and (max-width: 1200px) {
+          padding: 24px 26px;
+          //text-align: center;
+        }
+        @media only screen and (max-width: 1080px) {
+          padding: 20px 18px;
+          //text-align: center;
+        }
+        @media only screen and (max-width: 991px) {
+          padding: 20px 8px;
+
+          //text-align: center;
+        }
+        @media only screen and (max-width: 767px) {
+          cursor: pointer;
+          height: fit-content;
+          padding: 16px;
+          gap: 10px;
+          border-bottom: 1px solid #C4C4C4;
+          border-radius: 0px;
+        }
+
+        .pricingOptionIconContainer{
+          display: grid;
+          grid-gap: 24px;
+          grid-template-columns: auto auto;
+          justify-content: start;
+          align-items: center;
+          .pricingOptionIconWrapper{
+            width: 50px;
+            height: 50px;
+          }
+        }
+        .pricingOptionTitle {
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: center;
+          display: block;
+          color: #916CF6;
+          @media only screen and (max-width: 1340px) {
+            font-size: 20px;
+            //text-align: center;
+          }
+          @media only screen and (max-width: 991px) {
+            font-size: 18px;
+            //text-align: center;
+          }
+          @media only screen and (max-width: 767px) {
+            text-align: center;
+            //text-align: center;
+          }
+        }
+
+        .pricingOptionMobileTitle {
+          display: none;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 21px;
+          letter-spacing: -0.19208605587482452px;
+          text-align: left;
+
+          @media only screen and (max-width: 767px) {
+            display: grid;
+            grid-template-columns: 1fr 20px;
+          }
+        }
+
+        .recommendedPrice {
+          visibility: visible;
+          height: fit-content;
+          font-family: Poppins;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #2DD272;
+          display: none;
+          @media only screen and (max-width: 767px) {
+            display: inline-block
+          }
+
+        }
+
+        .pricingOptionPrice {
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 54px;
+          letter-spacing: 0em;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @media only screen and (max-width: 991px) {
+            font-size: 24px;
+            line-height: 32px;
+          }
+          @media only screen and (max-width: 767px) {
+            display: inline-flex;
+            text-align: left;
+            justify-content: flex-start;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 21px;
+          }
+
+          .pricingInner {
+            align-self: stretch;
+            justify-self: stretch;
+
+
+          }
+        }
+
+        .pricingHelperText {
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: #697A88;
+          @media only screen and (max-width: 767px) {
+            text-align: left;
+          }
+        }
+        .responsiveContainer{
+          height: fit-content;
+          visibility: visible;
+          //transition: height 0.5s ease-in-out;
+          //padding:8px 0;
+        }
+        .priceNumberContainer{
+
+        }
+        .pricingHelperText.nullHeight{
+          @media only screen and (max-width: 767px) {
+            height: 0;
+            visibility: hidden;
+          }
+        }
+        .responsiveContainer.nullHeight{
+          @media only screen and (max-width: 767px) {
+            height: 0;
+            visibility: hidden;
+          }
+        }
+        .pricingFeature {
+          display: grid;
+          grid-template-columns: auto 1fr;
+          grid-gap: 8.5px;
+          justify-content: center;
+          align-items: start;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 30px;
+          letter-spacing: 0em;
+          @media only screen and (max-width: 767px) {
+            font-size: 16px;
+            text-align: left;
+            color: #404040;
+          }
+        }
+
+        .getStartedCTA {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 24px;
+          letter-spacing: 0.05em;
+          text-align: center;
+          border: none;
+          outline: none;
+          border-radius: 10px;
+          color: white;
+          padding: 13px 24px;
+          background: #1F2C38;
+          display: inline-block;
+          cursor: pointer;
+          text-decoration: none;
+          max-width: unset;
+          @media only screen and (max-width: 1340px) {
+            padding: 8px 14px;
+          }
+          @media only screen and (max-width: 1200px) {
+            font-size: 14px;
+            line-height: 21px;
+            max-width: 120px;
+          }
+
+          &:hover {
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+          }
+        }
+
+        &:nth-of-type(2) {
+          height: 100%;
+        }
+
+      }
+    }
+  }
+  .priceExtraContainer{
+    .priceExtraTitle{
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 36px;
+      letter-spacing: -0.19208605587482452px;
+      text-align: center;
+      color: #000000;
+
+    }
+    .priceExtraSubtitle{
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: -0.19208605587482452px;
+      text-align: center;
+      color: #000000;
+      max-width: 800px;
+      margin: 0 auto;
+      @media only screen and (max-width: 767px) {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+    .demoCTA{
+      text-decoration: none;
+      margin: 0px auto;
+      display: block;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+      text-align: left;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      padding: 13px 18px;
+      outline: none;
+      width: 200px;
+      text-align: center;
+      background: #916CF6;
+      &:hover {
+        box-shadow: 0px 4px 15px rgba(145, 108, 246, 0.6);
+      }
+    }
+    .hideOnMd{
+      display: none;
+      @media only screen and (max-width: 767px) {
+        display: block;
+      }
+    }
+    .showOnMd{
+      display: block;
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+  .quoteCTA{
+    text-decoration: none;
+    margin: 16px auto;
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 13px 18px;
+    outline: none;
+    width: 200px;
+    text-align: center;
+    background: #1F2C38;
+
+    &:hover {
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    }
+  }
+  .hideOnMd{
+    display: none;
+    @media only screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+  .showOnMd{
+    display: block;
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}

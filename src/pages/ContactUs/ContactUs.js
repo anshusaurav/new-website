@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import ContactHero from "../../components/new/ContactHero";
+import ContactHeroTemp from "../../components/new/ContactHeroTemp";
 
 const heroCard = {
   title: "Contact Us",
@@ -12,7 +13,7 @@ const ContactUs = (props) => {
   }, []);
   return (
     <>
-      <ContactHero card={heroCard} page="ContactUs"/>
+      <ContactHeroTemp card={heroCard} page="ContactUs"/>
     </>
   )
 }

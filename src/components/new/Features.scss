@@ -1,158 +1,288 @@
-.pageFeatures{
-  padding: 32px 30px 44px!important;
-  color:#000000;
+.homeFeatures {
+  .pageFeatures {
+    padding: 32px 30px 44px !important;
+    color: #000000;
 
-  @media only screen and (max-width: 767px) {
-    padding: 28px 20px 36px!important;
-  }
-  .sectionTitle{
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 54px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #1F2C38;
-    @media only screen and (max-width: 575px) {
-      font-size: 24px;
-      line-height: 36px;
-    }
-  }
-  .featuresContainer{
-    max-width: 1324px;
-    margin: 0 auto;
-    @media only screen and (max-width: 1324px) {
-      max-width: 100%;
+    @media only screen and (max-width: 767px) {
+      padding: 28px 20px 36px !important;
     }
 
-  }
-  .cardTitle{
-    font-family: Poppins;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 33px;
-    letter-spacing: -0.19208605587482452px;
-    text-align: left;
-    //max-width: 480px;
-    @media only screen and (max-width: 767px) {
-      font-size: 22px;
-      line-height: 27px;
-      text-align: center;
-    }
-    @media only screen and (max-width: 575px) {
-      font-size: 20px;
-      line-height: 30px;
-    }
-  }
-  .cardSubTitle{
-
-    font-family: Poppins;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 33px;
-    letter-spacing: -0.19208605587482452px;
-    text-align: left;
-    margin-top: 0;
-    @media only screen and (max-width: 767px) {
-      font-size: 18px;
-      line-height: 24px;
-      text-align: center;
-      margin-top: 16px;
-    }
-
-  }
-  .featureMoreCTA{
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 33px;
-    letter-spacing: -0.19208605587482452px;
-    text-align: left;
-    color: #916CF6;
-    text-decoration: none;
-    font-family: Poppins, sans-serif;
-    @media only screen and (max-width: 767px) {
-      font-size: 18px;
-      line-height: 24px;
-      text-align: center;
-      margin-top: 16px;
-    }
-  }
-  .rightImage{
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    align-items: stretch;
-    .orderText{
-      order: 1;
-    }
-    .orderImage{
-      order: 2;
-    }
-    @media only screen and (max-width: 767px) {
-      grid-template-columns: 1fr;
-      .orderText{
-        order: 2;
-      }
-      .orderImage{
-        order: 1;
-      }
-    }
-
-  }
-  .leftImage{
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    align-items: stretch;
-    .orderText{
-      order: 2;
-    }
-    .orderImage{
-      order: 1;
-    }
-    @media only screen and (max-width: 767px) {
-      grid-template-columns: 1fr;
-    }
-  }
-  .hideOnMd{
-    display: none;
-    @media only screen and (max-width: 767px) {
-      display: block;
-    }
-  }
-  .showOnMd{
-    display: block;
-    @media only screen and (max-width: 767px) {
-      display: none;
-    }
-  }
-  .featuresDescription{
-    padding: 0 44px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    @media only screen and (max-width: 1200px) {
-      padding: 18px;
-    }
-    @media only screen and (max-width: 992px) {
-      padding: 14px;
-    }
-    @media only screen and (max-width: 767px) {
-      padding: 0;
-    }
-  }
-  .preFooterCTAContainer{
-    padding-top: 32px;
-    .title{
+    .sectionTitle {
       font-size: 36px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 600;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #1F2C38;
+
+      @media only screen and (max-width: 991px) {
+        font-size: 26px;
+      }
+      @media only screen and (max-width: 575px) {
+        font-size: 24px;
+      }
+    }
+
+    .sectionSubTitle {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0em;
+      text-align: center;
+      @media only screen and (max-width: 575px) {
+        font-size: 14px;
+      }
+    }
+
+    .featuresContainer {
+      max-width: 1324px;
+      margin: 0 auto;
+      @media only screen and (max-width: 1324px) {
+        max-width: 100%;
+      }
+
+    }
+
+    .cardTitle {
+      font-style: normal;
+      font-weight: 600;
+      line-height: 33px;
+      letter-spacing: -0.19208605587482452px;
+      text-align: left;
+      //max-width: 480px;
+      @media only screen and (max-width: 991px) {
+        font-size: 22px;
+        line-height: 27px;
+        text-align: center;
+      }
+      @media only screen and (max-width: 575px) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    .cardSubTitle {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 33px;
+      letter-spacing: -0.19208605587482452px;
+      text-align: left;
+      margin-top: 0;
+      @media only screen and (max-width: 991px) {
+        font-size: 18px;
+        line-height: 33px;
+        margin-top: 16px;
+      }
+      @media only screen and (max-width: 767px) {
+        text-align: center;
+        line-height: 24px;
+      }
+    }
+
+
+    .platformCard {
+      background: #F8F8F8;
+      border-radius: 30px;
+      padding: 32px 36px;
+      border-bottom: none;
+      color: #000;
+
+      &:hover {
+        color: #000;
+        box-shadow: 0px 10px 30px rgba(43, 95, 173, 0.1);
+      }
+
+      @media only screen and (max-width: 1200px) {
+        padding: 24px 26px;
+        //text-align: center;
+      }
+      @media only screen and (max-width: 1080px) {
+        padding: 20px 18px;
+        //text-align: center;
+      }
+      @media only screen and (max-width: 991px) {
+        padding: 20px 8px;
+
+        //text-align: center;
+      }
+      @media only screen and (max-width: 767px) {
+
+        padding: 16px;
+        gap: 10px;
+      }
+
+      .platformCardIconContainer {
+        width: 60px;
+        height: 60px;
+        margin: 0;
+
+        @media only screen and (max-width: 991px) {
+          width: 40px;
+          height: 40px;
+        }
+        @media only screen and (max-width: 767px) {
+          margin: 0 auto;
+        }
+        @media only screen and (max-width: 575px) {
+          width: 36px;
+          height: 36px;
+        }
+      }
+
+      .platformCardTitle {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        display: block;
+        @media only screen and (max-width: 1340px) {
+          font-size: 20px;
+          //text-align: center;
+        }
+        @media only screen and (max-width: 991px) {
+          font-size: 18px;
+          //text-align: center;
+        }
+        @media only screen and (max-width: 767px) {
+          text-align: center;
+          //text-align: center;
+        }
+      }
+
+      .platformCardDescription {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0em;
+        text-align: left;
+        @media only screen and (max-width: 767px) {
+          text-align: center;
+          font-size: 16px;
+          //text-align: center;
+        }
+      }
+
+      .platformCardCTA {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: left;
+        @media only screen and (max-width: 767px) {
+          text-align: center;
+          //text-align: center;
+        }
+      }
+    }
+
+    .featureMoreCTA {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 33px;
+      letter-spacing: -0.19208605587482452px;
+      text-align: left;
+      color: #916CF6;
+      text-decoration: none;
+      font-family: Poppins, sans-serif;
+      @media only screen and (max-width: 991px) {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 16px;
+      }
+    }
+
+    .rightImage {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      align-items: stretch;
+
+      .orderText {
+        order: 1;
+      }
+
+      .orderImage {
+        order: 2;
+      }
+
+      @media only screen and (max-width: 767px) {
+        grid-template-columns: 1fr;
+        .orderText {
+          order: 2;
+        }
+        .orderImage {
+          order: 1;
+        }
+      }
+
+    }
+
+    .leftImage {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      align-items: stretch;
+
+      .orderText {
+        order: 2;
+      }
+
+      .orderImage {
+        order: 1;
+      }
+
+      @media only screen and (max-width: 767px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .hideOnMd {
+      display: none;
+      @media only screen and (max-width: 767px) {
+        display: block;
+      }
+    }
+
+    .showOnMd {
+      display: block;
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    .featuresDescription {
+      padding: 0 44px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      @media only screen and (max-width: 1200px) {
+        padding: 18px;
+      }
+      @media only screen and (max-width: 991px) {
+        padding: 14px;
+      }
+      @media only screen and (max-width: 767px) {
+        padding: 0;
+      }
+    }
+
+
+  }
+
+  .preFooterCTAContainer {
+    padding-top: 32px;
+    background: #F8F8F8;
+
+    .title {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
       line-height: 54px;
       letter-spacing: -0.19208605587482452px;
       text-align: center;
-      @media only screen and (max-width: 767px) {
-        font-size: 28px;
+      @media only screen and (max-width: 991px) {
+        font-size: 26px;
         line-height: 42px;
       }
       @media only screen and (max-width: 575px) {
@@ -160,60 +290,219 @@
         line-height: 36px;
       }
     }
-    .CTAWrapper{
-      display: grid;
-      grid-template-columns: auto;
-      grid-gap: 24px;
-      justify-content: center;
-      a, button{
-        font-family: Poppins;
+
+    .subTitle {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      text-align: center;
+      @media only screen and (max-width: 991px) {
         font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 24px;
-        letter-spacing: 0.05em;
-        text-align: left;
-        border: none;
-        border-radius: 10px;
-        color: white;
-        padding:12px 20px;
-        outline: none;
-        max-width: 200px;
-        text-decoration: none;
-        @media only screen and (max-width: 767px) {
-          letter-spacing: 0.02em;
-        }
-        &:active{
-          text-decoration: none;
-        }
       }
-      .demoCTA{
-        background: #1F2C38;
-        &:hover{
-          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-        }
+      @media only screen and (max-width: 575px) {
+        font-size: 14px;
       }
-      .signInCTA{
-        background: #1F2C38;
-        &:hover{
-          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-        }
+    }
+
+    .mobileIntegrationWrapper {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .manyMoreText {
+      margin-top: 200px;
+      font-size: 24px;
+      @media only screen and (max-width: 991px) {
+        margin-top: 20px;
+        font-size: 16px;
       }
-      .hideOnMd{
-        display: none;
-        @media only screen and (max-width: 767px) {
-          display: block;
-        }
+    }
+  }
+
+  .fixedWidthContainer {
+    max-width: 1080px;
+  }
+
+  .platformGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 36px;
+    @media only screen and (max-width: 991px) {
+      grid-gap: 24px;
+    }
+    @media only screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+    @media only screen and (max-width: 575px) {
+      grid-gap: 20px;
+    }
+  }
+
+  .homeIntegrationContainer {
+    width: 880px;
+    max-width: 880px;
+    @media only screen and (max-width: 1200px) {
+      width: 760px;
+      max-width: 760px;
+    }
+    @media only screen and (max-width: 991px) {
+      width: 540px;
+      max-width: 540px;
+    }
+    @media only screen and (max-width: 767px) {
+      width: 480px;
+      max-width: 480px;
+    }
+    @media only screen and (max-width: 575px) {
+      width: 400px;
+      max-width: 400px;
+    }
+
+    .thunderpodIntegrationIcon {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      min-height: 234px;
+    }
+
+    .integrationIconWrapper {
+      width: 80px;
+      @media only screen and (max-width: 1200px) {
+        width: 64px;
       }
-      .showOnMd{
-        display: block;
-        @media only screen and (max-width: 767px) {
-          display: none;
-        }
+      @media only screen and (max-width: 991px) {
+        width: 60px;
+        max-width: 60px;
       }
       @media only screen and (max-width: 767px) {
-        grid-gap: 12px;
+        width: 40px;
+        max-width: 40px;
       }
+      @media only screen and (max-width: 575px) {
+        width: 32px;
+        max-width: 32px;
+      }
+    }
+
+    .integrationIconLabel {
+      font-size: 18px;
+      @media only screen and (max-width: 1200px) {
+        font-size: 16px;
+      }
+      @media only screen and (max-width: 767px) {
+        font-size: 14px;
+      }
+      @media only screen and (max-width: 575px) {
+        font-size: 12px;
+      }
+    }
+
+  }
+
+  .homeReviewContainer {
+    margin: 0 auto;
+    max-width: 880px;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    grid-gap: 32px;
+    @media only screen and (max-width: 767px) {
+      grid-template-columns: 20px 1fr 20px;
+      grid-gap: 8px;
+    }
+    .resReviewFont{
+      font-size: 20px;
+      @media only screen and (max-width: 767px) {
+        font-size: 16px;
+      }
+    }
+    .navigationDot {
+      min-width: 12px;
+      min-height: 12px;
+      border-radius: 50%;
+      background: #c4c4c4;
+    }
+    .reviewNav{
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      @media only screen and (max-width: 767px) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .commentIcon{
+    width: 90px;
+      height: 90px;
+      @media only screen and (max-width: 767px) {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+
+  .CTAWrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 24px;
+    justify-content: center;
+
+    a, button {
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+      text-align: left;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      padding: 12px 20px;
+      outline: none;
+      max-width: 200px;
+      text-decoration: none;
+      @media only screen and (max-width: 767px) {
+        letter-spacing: 0.02em;
+      }
+
+      &:active {
+        text-decoration: none;
+      }
+    }
+
+    .demoCTA {
+      background: #916CF6;
+
+      &:hover {
+        box-shadow: 0px 4px 15px rgba(145, 108, 246, 0.35);
+      }
+    }
+
+    .signInCTA {
+      background: #1F2C38;
+
+      &:hover {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+      }
+    }
+
+    .hideOnMd {
+      display: none;
+      @media only screen and (max-width: 767px) {
+        display: block;
+      }
+    }
+
+    .showOnMd {
+      display: block;
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      grid-gap: 12px;
     }
   }
 }

@@ -6,23 +6,23 @@ import OtherHero from "../../components/new/OtherHero";
 const heroCard = {
   title: "Growth",
   subTitle: "Set & track areas for career development",
-  imageURL: "assets/images/growth-hero.png",
-  lowImageURL: "assets/images/growth-hero-low.png"
+  imageURL: "https://gcdn.thunderpod.com/ThunderpodWebsite/growth-hero.png",
+  lowImageURL: "https://gcdn.thunderpod.com/ThunderpodWebsite/growth-hero-low.png"
 }
 const cards = [{
   title: "Growth cards for employees’ learning",
   subTitle:
-    "Empowering managers to guide & track team's skill development",
-  imageURL: "assets/images/growth-why-tp1.png"
+    "Empowering managers to guide & track team's skill development.",
+  imageURL: "https://gcdn.thunderpod.com/ThunderpodWebsite/growth-why-tp1.png"
 }, {
   title: "Courses to upskill your workforce",
-  subTitle: "Encourage continuous learning process in your company",
-  imageURL: "assets/images/growth-why-tp2.png"
+  subTitle: "Encourage continuous learning process in your company.",
+  imageURL: "https://gcdn.thunderpod.com/ThunderpodWebsite/growth-why-tp2.png"
 },
   {
     title: "Interact with industry experts",
-    subTitle: "Get exposure from  experienced industry experts & enthusiats to adopt best practices",
-    imageURL: "assets/images/growth-why-tp3.png"
+    subTitle: "Get exposure from  experienced industry experts & enthusiats to adopt best practices.",
+    imageURL: "https://gcdn.thunderpod.com/ThunderpodWebsite/growth-why-tp3.png"
   }]
 const Growth = (props) => {
   const {openTypeForm} = props;

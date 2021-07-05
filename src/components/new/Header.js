@@ -1,10 +1,10 @@
-import React, {useRef, useState} from "react"
+import React, {useState} from "react"
 import {withRouter} from "react-router-dom"
 import "./Header.scss"
 import HamburgerMenu from "react-hamburger-menu"
 import classNames from "classnames";
 import {
-  faCaretDown, faCaretUp, faArrowLeft
+  faCaretDown
 } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
@@ -14,44 +14,19 @@ import {
   Dropdown,
   NavLink,
 } from "reactstrap";
-// function debounce(func, wait, immediate) {
-//   var timeout;
-//   return function() {
-//     var context = this, args = arguments;
-//     var later = function() {
-//       timeout = null;
-//       if (!immediate) func.apply(context, args);
-//     };
-//     var callNow = immediate && !timeout;
-//     clearTimeout(timeout);
-//     timeout = setTimeout(later, wait);
-//     if (callNow) func.apply(context, args);
-//   };
-// };
+
 const Header = (props) => {
   const {demoClick} = props;
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  // const [prevScrollPos, setPrevScrollPos] = useState(0);
-  // const [visible, setVisible] = useState(true);
-  // const handleScroll = () => {
-  //   const currentScrollPos = window.pageYOffset;
-  //
-  //   setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
-  //   setPrevScrollPos(currentScrollPos);
-  // };
-  //
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, [prevScrollPos, visible, handleScroll]);
+
   const toggle = () => setDropdownOpen(dropDownOpen => !dropDownOpen);
 
   return (
     <>
       <div className="pageHeader">
         <div className="d-flex justify-content-between pageHeaderWrapper">
-          <div className="logoContainer" style={{backgroundImage: 'url("assets/images/logo.png")'}}
+          <div className="logoContainer" style={{backgroundImage: 'url("https://gcdn.thunderpod.com/ThunderpodWebsite/logo.png")'}}
                onClick={() => props.history.push('/')}>
           </div>
           <div className="headerMenuWrapper">
@@ -75,27 +50,15 @@ const Header = (props) => {
                 </DropdownToggle>
                 <DropdownMenu className="productDropdownMenu">
                   <DropdownItem className="productMenuItem" onClick={() => {
-                    props.history.push('/performance')
+                    props.history.push('/work')
                   }}>
-                    Performance
+                    <img src="/assets/images/work-icon-low.png" style={{width: 14, height: "auto"}}/>&nbsp;Work
                   </DropdownItem>
                   <DropdownItem divider/>
                   <DropdownItem className="productMenuItem" onClick={() => {
-                    props.history.push('/growth')
+                    props.history.push('/wellbeing')
                   }}>
-                    Growth
-                  </DropdownItem>
-                  <DropdownItem divider/>
-                  <DropdownItem className="productMenuItem" onClick={() => {
-                    props.history.push('/productivity')
-                  }}>
-                    Productivity
-                  </DropdownItem>
-                  <DropdownItem divider/>
-                  <DropdownItem className="productMenuItem" onClick={() => {
-                    props.history.push('/analytics')
-                  }}>
-                    Analytics
+                      <img src="/assets/images/wellbeing-icon-low.png" style={{width: 14, height: "auto"}}/>&nbsp;Wellbeing
                   </DropdownItem>
                   <div className="topArrow"></div>
                 </DropdownMenu>
@@ -108,13 +71,15 @@ const Header = (props) => {
               </div>
             </div>
             <div className="headerCTAContainer">
-              <button className="demoCTA" onClick={() => demoClick()}>Request a demo</button>
-              <a className="signInCTA" href="https://business.thunderpod.com" target="_blank"
+              <a className="simplePurpleCTA" href="https://business.thunderpod.com/signin" target="_blank"
                  rel="noopener noreferrer">Sign in</a>
+
+              <a className="demoCTA" href="https://calendly.com/d/n6ff-x2mp/thunderpod-demo" target="_blank">Get a demo</a>
+              <a className="signInCTA d-flex align-items-center" href="https://business.thunderpod.com/signup" target="_blank"
+                 rel="noopener noreferrer">Try for free</a>
             </div>
           </div>
-
-          <HamburgerMenu className="showOnMd hamburgerMenu"
+           <HamburgerMenu className="showOnMd hamburgerMenu"
                          isOpen={hamburgerOpen}
                          menuClicked={() => {
                            setHamburgerOpen(!hamburgerOpen)
@@ -131,39 +96,21 @@ const Header = (props) => {
       </div>
       <div className={classNames("navigationMobileWrap", {"mobileNavOpen": hamburgerOpen})}>
         <div className="navigationMobileContainer">
-          {/*<div className="position-absolute navigationMobileDismiss" onClick={()=>{setHamburgerOpen(!hamburgerOpen)}}><FontAwesomeIcon className="closeMobileNav bg-white" icon={faTimesCircle}/></div>*/}
-          <div className="navigationMobile">
-            {/*<a className="demoCTA" href="https://v5uyd32e1lw.typeform.com/to/ZhBatJna" target="_blank"*/}
-            {/*   rel="noopener noreferrer">Request a demo</a>*/}
-            {/*<a className="signInCTA" href="https://business.thunderpod.com" target="_blank"*/}
-            {/*   rel="noopener noreferrer">Sign in</a>*/}
+           <div className="navigationMobile">
 
             <DropdownItem className="productMenuItem" onClick={() => {
-              props.history.push('/performance');
+              props.history.push('/work');
               setHamburgerOpen(false);
             }}>
-              Performance
+              Work
             </DropdownItem>
             <DropdownItem divider/>
+
             <DropdownItem className="productMenuItem" onClick={() => {
-              props.history.push('/growth');
+              props.history.push('/wellbeing');
               setHamburgerOpen(false);
             }}>
-              Growth
-            </DropdownItem>
-            <DropdownItem divider/>
-            <DropdownItem className="productMenuItem" onClick={() => {
-              props.history.push('/productivity');
-              setHamburgerOpen(false);
-            }}>
-              Productivity
-            </DropdownItem>
-            <DropdownItem divider/>
-            <DropdownItem className="productMenuItem" onClick={() => {
-              props.history.push('/analytics');
-              setHamburgerOpen(false);
-            }}>
-              Analytics
+              Wellbeing
             </DropdownItem>
             <DropdownItem divider/>
             <DropdownItem className="productMenuItem" onClick={() => {
@@ -171,6 +118,24 @@ const Header = (props) => {
               setHamburgerOpen(false);
             }}>
               Pricing
+            </DropdownItem>
+            <DropdownItem divider/>
+            <DropdownItem tag="a" href="https://business.thunderpod.com/signup" className="productMenuItem" target="_blank" rel="noopener noreferrer" onClick={() => {
+              setHamburgerOpen(false);
+            }}>
+              Try for free
+            </DropdownItem>
+            <DropdownItem divider/>
+            <DropdownItem tag="a" href="https://calendly.com/d/n6ff-x2mp/thunderpod-demo" className="productMenuItem" target="_blank" rel="noopener noreferrer" onClick={() => {
+              setHamburgerOpen(false);
+            }}>
+              Get a demo
+            </DropdownItem>
+            <DropdownItem divider/>
+            <DropdownItem tag="a" href="https://business.thunderpod.com/signin" className="productMenuItem" target="_blank" rel="noopener noreferrer" onClick={() => {
+              setHamburgerOpen(false);
+            }}>
+              Sign in
             </DropdownItem>
           </div>
         </div>

@@ -1,0 +1,160 @@
+.preFooterProductivity{
+  padding: 32px 30px 44px!important;
+  color:#000000;
+  background:  #F8F8F8;
+
+  @media only screen and (max-width: 767px) {
+    padding: 28px 20px 36px!important;
+  }
+  .preFooterCTAContainer{
+    padding-top: 32px;
+    .preFooterOptions {
+      max-width: 1324px;
+      margin: 0 auto;
+      @media only screen and (max-width: 1324px) {
+        max-width: 100%;
+      }
+      .optionsDecP{
+        min-width: 154px;
+        min-height: 36px;
+        @media only screen and (max-width: 575px) {
+          min-width: 120px;
+          min-height: 28px;
+        }
+      }
+
+
+      .productivityOptionsGrid{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+        align-items: center;
+        grid-gap: 32px;
+        @media only screen and (max-width: 991px) {
+         grid-gap: 20px;
+        }
+        @media only screen and (max-width: 575px) {
+          grid-gap: 8px;
+        }
+        .optionsCTA{
+          text-align: center;
+          font-size: 16px;
+          border-radius: 15px;
+          letter-spacing: 0.05em;
+          padding: 12px 16px;
+          cursor: pointer;
+
+          @media only screen and (max-width: 575px) {
+            font-size: 14px;
+            padding: 8px 12px;
+          }
+        }
+
+      }
+    }
+    .imageGrid{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 28px;
+      justify-content: space-between;
+      max-width: 1324px;
+      margin: 0 auto;
+      @media only screen and (max-width: 1324px) {
+        max-width: 100%;
+      }
+      @media only screen and (max-width: 991px) {
+        grid-gap: 20px;
+      }
+      @media only screen and (max-width: 767px) {
+        grid-gap: 8px;
+      }
+      @media only screen and (max-width: 575px) {
+        display: none;
+      }
+    }
+    .imageSlider{
+      .imageSliderGrid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 200px);
+        justify-content: center;
+        grid-gap: 16px;
+        .productsNav{
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+        }
+      }
+    }
+    .title{
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 54px;
+      letter-spacing: -0.19208605587482452px;
+      text-align: center;
+      @media only screen and (max-width: 767px) {
+        font-size: 28px;
+        line-height: 42px;
+      }
+      @media only screen and (max-width: 575px) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+    .CTAWrapper{
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 24px;
+      justify-content: center;
+      a, button{
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        padding:12px 20px;
+        outline: none;
+        max-width: 200px;
+        text-decoration: none;
+        @media only screen and (max-width: 767px) {
+          letter-spacing: 0.02em;
+        }
+        &:active{
+          text-decoration: none;
+        }
+      }
+      .demoCTA{
+        background: #916CF6;
+        &:hover{
+          box-shadow: 0px 4px 15px rgba(145, 108, 246, 0.35);
+        }
+      }
+      .signInCTA{
+        background: #1F2C38;
+        &:hover{
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+        }
+      }
+      .hideOnMd{
+        display: none;
+        @media only screen and (max-width: 767px) {
+          display: block;
+        }
+      }
+      .showOnMd{
+        display: block;
+        @media only screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        grid-gap: 12px;
+      }
+    }
+  }
+}

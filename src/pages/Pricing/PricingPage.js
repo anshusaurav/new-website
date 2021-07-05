@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import PricingHero from "../../components/new/PricingHero";
+import NewPricingHero from "../../components/new/NewPricingHero";
 
 const heroCard = {
   title: "Pricing",
@@ -13,7 +14,7 @@ const PricingPage = (props) => {
   }, []);
   return (
     <>
-      <PricingHero card={heroCard} page="Pricing" openTypeForm = {()=>openTypeForm()}/>
+      <NewPricingHero card={heroCard} page="Pricing" openTypeForm = {()=>openTypeForm()}/>
     </>
   )
 }

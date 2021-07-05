@@ -18,9 +18,8 @@ const SecurityAxis = (props) => {
             card.showCTA && (
               <>
                 <div className="d-flex justify-content-center mt-4">
-                  <button className="demoCTA showOnMd" onClick={() => demoClick()}>Request a demo</button>
-                  <a className="demoCTA hideOnMd" href="https://v5uyd32e1lw.typeform.com/to/ZhBatJna" target="_blank"
-                     rel="noopener noreferrer">Request a demo</a>
+                  <button className="demoCTA" onClick={() => demoClick()}>Get a demo</button>
+
                 </div>
               </>
             )
