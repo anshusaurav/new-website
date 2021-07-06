@@ -49,16 +49,16 @@ const Header = (props) => {
                   </div>
                 </DropdownToggle>
                 <DropdownMenu className="productDropdownMenu">
-                  <DropdownItem className="productMenuItem" onClick={() => {
+                  <DropdownItem className="productMenuItem d-flex align-items-center" onClick={() => {
                     props.history.push('/work')
                   }}>
-                    <img src="/assets/images/work-icon-low.png" style={{width: 14, height: "auto"}}/>&nbsp;Work
+                    <img src="/assets/images/work-icon-low.png" style={{width: 18, height: "auto"}} className="mr-2"/>Work
                   </DropdownItem>
                   <DropdownItem divider/>
-                  <DropdownItem className="productMenuItem" onClick={() => {
+                  <DropdownItem className="productMenuItem d-flex align-items-center" onClick={() => {
                     props.history.push('/wellbeing')
                   }}>
-                      <img src="/assets/images/wellbeing-icon-low.png" style={{width: 14, height: "auto"}}/>&nbsp;Wellbeing
+                      <img src="/assets/images/wellbeing-icon-low.png" style={{width: 18, height: "auto"}} className="mr-2"/>Wellbeing
                   </DropdownItem>
                   <div className="topArrow"></div>
                 </DropdownMenu>

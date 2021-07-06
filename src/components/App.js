@@ -16,7 +16,7 @@ import Footer from "./new/Footer";
 import SecurityPage from "../pages/Security/SecurityPage";
 import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
 import TermsConditions from "../pages/TermsAndConditions/TermsConditions";
-import CookieConsent, { Cookies } from "react-cookie-consent";
+// import CookieConsent, { Cookies } from "react-cookie-consent";
 import Work from "../pages/Work/Work";
 const App = (props) => {
   useEffect(()=>{

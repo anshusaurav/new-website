@@ -93,7 +93,7 @@ const Features = (props) => {
                                                     <div className="platformCardTitle mb-3">{card.title}</div>
                                                     <div
                                                         className="platformCardDescription mb-4">{card.description}</div>
-                                                    <div className="platformCardCTA"> Learn More&nbsp;<FontAwesomeIcon
+                                                    <div className="platformCardCTA mt-3"> Learn More&nbsp;<FontAwesomeIcon
                                                         icon={faCaretRight}/></div>
                                                 </Link>
                                             )
@@ -145,7 +145,8 @@ const Features = (props) => {
                                                             <div className="integrationIconWrapper">
                                                                 <img src={integration.icon} className="w-100"/>
                                                             </div>
-                                                            <div className="integrationIconLabel text-center">{integration.name}</div>
+                                                            <div
+                                                                className="integrationIconLabel text-center">{integration.name}</div>
                                                         </div>
                                                     )
                                                 })
@@ -175,7 +176,8 @@ const Features = (props) => {
                                                             <div className="integrationIconWrapper">
                                                                 <img src={integration.icon} className="w-100"/>
                                                             </div>
-                                                            <div className="integrationIconLabel text-center">{integration.name}</div>
+                                                            <div
+                                                                className="integrationIconLabel text-center">{integration.name}</div>
                                                         </div>
                                                     )
                                                 })
@@ -207,7 +209,8 @@ const Features = (props) => {
                                                             <div className="integrationIconWrapper">
                                                                 <img src={integration.icon} className="w-100"/>
                                                             </div>
-                                                            <div className="integrationIconLabel text-center">{integration.name}</div>
+                                                            <div
+                                                                className="integrationIconLabel text-center">{integration.name}</div>
                                                         </div>
                                                     )
                                                 })
@@ -221,7 +224,7 @@ const Features = (props) => {
                     </div>
                 </div>
                 <div className="d-block d-lg-none py-4 px-3 mobileIntegrationWrapper">
-                    <img src="/assets/images/integrationns-mobile-home.png" className="w-100" />
+                    <img src="/assets/images/integrationns-mobile-home.png" className="w-100"/>
                     {/*{*/}
                     {/*    integrations.map(integration =>{*/}
                     {/*        return (*/}
@@ -248,10 +251,12 @@ const Features = (props) => {
                     {/*    })*/}
                     {/*}*/}
                 </div>
-                <div className="font-weight-bold lightPurple text-center manyMoreText" >and many
+                <div className="font-weight-bold lightPurple text-center manyMoreText">and many
                     more...
                 </div>
-                <div className="title mt-5 mb-4 pt-3 d-flex justify-content-center align-items-center">Maximize your workplace ROI</div>
+                <div className="title mt-5 mb-4 pt-5 d-flex justify-content-center align-items-center">Maximize your
+                    workplace ROI
+                </div>
                 <div className="CTAWrapper pb-4">
                     <a className="demoCTA" href="https://calendly.com/d/n6ff-x2mp/thunderpod-demo" target="_blank">Get a
                         demo

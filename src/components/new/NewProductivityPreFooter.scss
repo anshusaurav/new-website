@@ -1,20 +1,23 @@
-.preFooterProductivity{
-  padding: 32px 30px 44px!important;
-  color:#000000;
-  background:  #F8F8F8;
+.preFooterProductivity {
+  padding: 32px 30px 44px !important;
+  color: #000000;
+  background: #F8F8F8;
 
   @media only screen and (max-width: 767px) {
-    padding: 28px 20px 36px!important;
+    padding: 28px 20px 36px !important;
   }
-  .preFooterCTAContainer{
+
+  .preFooterCTAContainer {
     padding-top: 32px;
+
     .preFooterOptions {
       max-width: 1324px;
       margin: 0 auto;
       @media only screen and (max-width: 1324px) {
         max-width: 100%;
       }
-      .optionsDecP{
+
+      .optionsDecP {
         min-width: 154px;
         min-height: 36px;
         @media only screen and (max-width: 575px) {
@@ -24,19 +27,20 @@
       }
 
 
-      .productivityOptionsGrid{
+      .productivityOptionsGrid {
         display: grid;
         grid-template-columns: repeat(3, auto);
         justify-content: center;
         align-items: center;
         grid-gap: 32px;
         @media only screen and (max-width: 991px) {
-         grid-gap: 20px;
+          grid-gap: 20px;
         }
         @media only screen and (max-width: 575px) {
           grid-gap: 8px;
         }
-        .optionsCTA{
+
+        .optionsCTA {
           text-align: center;
           font-size: 16px;
           border-radius: 15px;
@@ -52,7 +56,8 @@
 
       }
     }
-    .imageGrid{
+
+    .imageGrid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-gap: 28px;
@@ -66,26 +71,31 @@
         grid-gap: 20px;
       }
       @media only screen and (max-width: 767px) {
-        grid-gap: 8px;
+        display: none;
       }
       @media only screen and (max-width: 575px) {
         display: none;
       }
     }
-    .imageSlider{
-      .imageSliderGrid{
+
+    .imageSlider {
+      .imageSliderGrid {
         display: grid;
         grid-template-columns: repeat(auto-fit, 200px);
         justify-content: center;
         grid-gap: 16px;
-        .productsNav{
+
+        .productsNav {
           width: 20px;
           height: 20px;
           border-radius: 50%;
         }
+
       }
+
     }
-    .title{
+
+    .title {
       font-size: 36px;
       font-style: normal;
       font-weight: 600;
@@ -101,12 +111,14 @@
         line-height: 36px;
       }
     }
-    .CTAWrapper{
+
+    .CTAWrapper {
       display: grid;
       grid-template-columns: auto auto;
       grid-gap: 24px;
       justify-content: center;
-      a, button{
+
+      a, button {
         font-family: Poppins;
         font-size: 16px;
         font-style: normal;
@@ -117,44 +129,65 @@
         border: none;
         border-radius: 10px;
         color: white;
-        padding:12px 20px;
+        padding: 12px 20px;
         outline: none;
         max-width: 200px;
         text-decoration: none;
         @media only screen and (max-width: 767px) {
           letter-spacing: 0.02em;
         }
-        &:active{
+
+        &:active {
           text-decoration: none;
         }
       }
-      .demoCTA{
+
+      .demoCTA {
         background: #916CF6;
-        &:hover{
+
+        &:hover {
           box-shadow: 0px 4px 15px rgba(145, 108, 246, 0.35);
         }
       }
-      .signInCTA{
+
+      .signInCTA {
         background: #1F2C38;
-        &:hover{
+
+        &:hover {
           box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
         }
       }
-      .hideOnMd{
+
+      .hideOnMd {
         display: none;
         @media only screen and (max-width: 767px) {
           display: block;
         }
       }
-      .showOnMd{
+
+      .showOnMd {
         display: block;
         @media only screen and (max-width: 767px) {
           display: none;
         }
       }
+
       @media only screen and (max-width: 767px) {
         grid-gap: 12px;
       }
     }
+
+    .mobileSliderCards {
+      //background: grey;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      color: #fff;
+      font-weight: 500;
+      //height: 300px;
+      //max-height: 100vh;
+    }
   }
 }
+

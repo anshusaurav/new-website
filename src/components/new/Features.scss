@@ -84,37 +84,37 @@
     .platformCard {
       background: #F8F8F8;
       border-radius: 30px;
-      padding: 32px 36px;
+      padding: 32px 36px 48px;
       border-bottom: none;
       color: #000;
-
+      position: relative;
       &:hover {
         color: #000;
         box-shadow: 0px 10px 30px rgba(43, 95, 173, 0.1);
       }
 
       @media only screen and (max-width: 1200px) {
-        padding: 24px 26px;
+        padding: 24px 26px 44px;
         //text-align: center;
       }
       @media only screen and (max-width: 1080px) {
-        padding: 20px 18px;
+        padding: 20px 18px 40px;
         //text-align: center;
       }
       @media only screen and (max-width: 991px) {
-        padding: 20px 8px;
+        padding: 20px 8px 40px;
 
         //text-align: center;
       }
       @media only screen and (max-width: 767px) {
 
-        padding: 16px;
+        padding: 16px 16px 36px;
         gap: 10px;
       }
 
       .platformCardIconContainer {
-        width: 60px;
-        height: 60px;
+        width: 48px;
+        height: 48px;
         margin: 0;
 
         @media only screen and (max-width: 991px) {
@@ -165,14 +165,33 @@
       }
 
       .platformCardCTA {
+        position: absolute;
+        bottom: 32px;
+        left: 36px;
+        right: 0;
         font-size: 18px;
         font-weight: 700;
         letter-spacing: 0em;
         text-align: left;
+        @media only screen and (max-width: 1200px) {
+          bottom: 20px;
+          left: 26px;
+        }
+        @media only screen and (max-width: 1080px) {
+          bottom: 16px;
+          left: 18px;
+        }
+        @media only screen and (max-width: 991px) {
+          padding: 20px 8px;
+          bottom: 16px;
+          left: 0px;
+        }
         @media only screen and (max-width: 767px) {
           text-align: center;
-          //text-align: center;
+          bottom: 12px;
+          left: 16px;
         }
+
       }
     }
 
@@ -310,8 +329,8 @@
     }
 
     .manyMoreText {
-      margin-top: 200px;
-      font-size: 24px;
+      margin-top: 248px;
+      font-size: 20px;
       @media only screen and (max-width: 991px) {
         margin-top: 20px;
         font-size: 16px;

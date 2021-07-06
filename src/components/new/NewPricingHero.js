@@ -75,8 +75,8 @@ const NewPricingHero = (props) => {
             </div>
             <div className="pricingPageHero my-3" style={{background: "#fff"}}>
                 <div className="pageHeroContainer px-2 px-xl-4">
-                    <div className="pricingNewContainer">
-                        <div className="pricingOptionsWrapper">
+                    <div className="pricingNewContainer mb-5">
+                        <div className="pricingOptionsWrapper mb-5">
                             {
                                 pricingOptions.map((option, index) => {
                                     return (
