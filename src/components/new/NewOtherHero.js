@@ -2,7 +2,7 @@ import React, {} from "react"
 import "./NewOtherHero.scss"
 const NewOtherHero = (props) => {
 
-  const {demoClick, card} = props;
+  const { card,page} = props;
   return (
     <div className="d-flex align-items-center justify-content-between newOtherPageHero">
       <div className="pageHeroWrapper">
@@ -20,7 +20,7 @@ const NewOtherHero = (props) => {
         <div className="imageContainer">
           <img
             src={card.imageURL}
-            className="w-100"
+            className={page==="Work"?"littleLessWidth":"w-100"}
             alt=""
           />
 

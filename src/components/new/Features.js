@@ -1,14 +1,8 @@
-import React, {useState} from "react"
+import React, {useState, useRef, useEffect} from "react"
 import {Link} from "react-router-dom";
+import {useKeenSlider} from "keen-slider/react"
 import {
-    faAngleRight,
-    faArrowLeft,
-    faArrowRight,
     faCaretRight,
-    faChevronLeft,
-    faChevronRight,
-    faLongArrowAltLeft,
-    faLongArrowAltRight
 } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import "./Features.scss"
@@ -53,22 +47,87 @@ const integrations = [
     }
 ]
 const reviews = [{
-    "name": "Savannah Nguyen", designation: "CEO Airtel", body: "Thunderpod saved us a boatload of money" +
-        " on infrastructure in the first month we switched."
+    "name": "Swaroop",
+    designation: "HR, Ezetap",
+    body: "Shoutout to Thunderpod for engaging our team from the past 4 months. Employees love the app and feedback has been positive"
 },
     {
-        "name": "Kurt Marvin", designation: "CEO Slack", body: "Thunderpod was the perfect solution for our employee" +
-            " experience program. It's easy for employees to opt in."
+        "name": "Sylvester Fernandez",
+        designation: "Senior Manager, Miss India Org",
+        body: "Thunderpod is a blessing in disguise - the virtual walkathon organized by you has done wonders for us. All our team and senior staff members are really happy."
     },
     {
-        "name": "Clark Valberg", designation: "CEO Invision", body: "As a largely remote company, Thunderpod helps us" +
-            " strengthen personal connections and company culture"
+        "name": "Mamoon", designation: " Senior Sales Manager, Comviva", body: "Thunderpod helped me get back into" +
+            " order after COVID. Loved the 8 week challenge and meditation activities."
     },
 ]
-const indexes = [0, 1, 2];
+const ArrowLeft = (props) => {
+    const disabled = props.disabled ? " arrow--disabled" : ""
+    return (
+        <svg onClick={props.onClick}
+             className={"arrow arrow--left" + disabled} width="39" height="21" viewBox="0 0 39 21" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.8066 10.4736L3.10075 10.4736" stroke="#1F2C38" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round"/>
+            <path d="M11.8828 19.9473L2.25245 10.7751L11.8828 1.60289" stroke="#1F2C38" stroke-width="2"
+                  stroke-miterlimit="10" stroke-linecap="round"/>
+        </svg>
+
+    )
+}
+
+const ArrowRight = (props) => {
+    const disabled = props.disabled ? " arrow--disabled" : ""
+    return (
+        <svg onClick={props.onClick}
+             className={"arrow arrow--right" + disabled} width="39" height="21" viewBox="0 0 39 21" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.1934 10.4736L35.8992 10.4736" stroke="#1F2C38" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round"/>
+            <path d="M27.1172 19.9473L36.7475 10.7751L27.1172 1.60289" stroke="#1F2C38" stroke-width="2"
+                  stroke-miterlimit="10" stroke-linecap="round"/>
+        </svg>
+    )
+}
+
 const Features = (props) => {
-    const {demoClick, cards, page} = props;
-    const [reviewIndex, setReviewIndex] = useState(0)
+    const [pause, setPause] = useState(false);
+    const [currentSlide, setCurrentSlide] = React.useState(0)
+    const timer = useRef()
+    const [sliderRef, slider] = useKeenSlider({
+        initial: 0,
+        loop: true,
+        duration: 2000,
+        dragStart: () => {
+            setPause(true)
+        },
+        dragEnd: () => {
+            setPause(false)
+        },
+        slideChanged(s) {
+            setCurrentSlide(s.details().relativeSlide)
+        },
+    })
+
+    useEffect(() => {
+        sliderRef.current.addEventListener("mouseover", () => {
+            setPause(true)
+        })
+        sliderRef.current.addEventListener("mouseout", () => {
+            setPause(false)
+        })
+    }, [sliderRef])
+
+    useEffect(() => {
+        timer.current = setInterval(() => {
+            if (!pause && slider) {
+                slider.next()
+            }
+        }, 4500)
+        return () => {
+            clearInterval(timer.current)
+        }
+    }, [pause, slider])
     return (
         <div className="homeFeatures">
             <div className="pageFeatures">
@@ -93,8 +152,9 @@ const Features = (props) => {
                                                     <div className="platformCardTitle mb-3">{card.title}</div>
                                                     <div
                                                         className="platformCardDescription mb-4">{card.description}</div>
-                                                    <div className="platformCardCTA mt-3"> Learn More&nbsp;<FontAwesomeIcon
-                                                        icon={faCaretRight}/></div>
+                                                    <div className="platformCardCTA mt-3"> Learn More&nbsp;
+                                                        <FontAwesomeIcon
+                                                            icon={faCaretRight}/></div>
                                                 </Link>
                                             )
                                         })
@@ -254,8 +314,78 @@ const Features = (props) => {
                 <div className="font-weight-bold lightPurple text-center manyMoreText">and many
                     more...
                 </div>
-                <div className="title mt-5 mb-4 pt-5 d-flex justify-content-center align-items-center">Maximize your
-                    workplace ROI
+
+            </div>
+            <div className="pageFeatures">
+                <div className="sectionTitle py-3">Know what our customers think</div>
+
+                <div className="homeReviewContainer mt-5">
+                    <div></div>
+                    <div>
+                        <div className="position-relative pt-4 pt-md-5 px-3 px-md-5  pb-3 pb-md-4 bgLightGrey"
+                             style={{borderRadius: 30, marginTop: 54}}>
+                            <div ref={sliderRef} className="keen-slider">
+                                {
+                                    reviews.map((review, index) => {
+                                        return (
+                                            <div className="keen-slider__slide" key={'review' + index}>
+                                                <div className="resReviewFont font-weight-500 mb-4">
+                                                    {review.body}
+                                                </div>
+                                                <div className="resReviewFont font-weight-bolder">
+                                                    {review.name}
+                                                </div>
+                                                <div className="resReviewFont font-weight-500">
+                                                    {review.designation}
+                                                </div>
+                                            </div>
+                                        )
+                                    })
+                                }
+
+                            </div>
+                            <div style={{
+                                top: 0,
+                                left: "50%",
+                                transform: "translate(-50%,-75%)",
+                                zIndex: 10
+                            }}
+                                 className="position-absolute commentIcon">
+                                <img src="/assets/images/comment-icon.png" className="w-100" alt="Comments"/>
+                            </div>
+                            {slider && (
+                                <>
+                                    <ArrowLeft
+                                        onClick={(e) => e.stopPropagation() || slider.prev()}
+                                        disabled={currentSlide === 0}
+                                    />
+                                    <ArrowRight
+                                        onClick={(e) => e.stopPropagation() || slider.next()}
+                                        disabled={currentSlide === slider.details().size - 1}
+                                    />
+                                </>
+                            )}
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+                {slider && (
+                    <div className="dots">
+                        {[...Array(slider.details().size).keys()].map((idx) => {
+                            return (
+                                <button
+                                    key={idx}
+                                    onClick={() => {
+                                        slider.moveToSlideRelative(idx)
+                                    }}
+                                    className={"dot" + (currentSlide === idx ? " active" : "")}
+                                />
+                            )
+                        })}
+                    </div>
+                )}
+                <div className="sectionTitle mt-5 mb-4 pt-3 d-flex justify-content-center align-items-center">Maximize
+                    your workplace ROI
                 </div>
                 <div className="CTAWrapper pb-4">
                     <a className="demoCTA" href="https://calendly.com/d/n6ff-x2mp/thunderpod-demo" target="_blank">Get a
@@ -265,74 +395,6 @@ const Features = (props) => {
                        rel="noopener noreferrer">Try for free</a>
                 </div>
             </div>
-            {/*<div className="pageFeatures">*/}
-            {/*    <div className="sectionTitle py-3">Know what our customers think</div>*/}
-
-            {/*    <div className="homeReviewContainer mt-5">*/}
-            {/*        <div className="pointer p-1 bgLightGrey d-flex justify-content-center align-items-center reviewNav"  onClick={() => {*/}
-            {/*            let tempReviewIndex = reviewIndex;*/}
-            {/*            if (tempReviewIndex >= 1) {*/}
-            {/*                tempReviewIndex--;*/}
-            {/*                setReviewIndex(tempReviewIndex)*/}
-            {/*            }*/}
-            {/*        }}>*/}
-            {/*        <FontAwesomeIcon icon={faChevronLeft}  size="md"  color={reviewIndex >= 1 ? '#1F2C38' : '#434e57'}/>*/}
-            {/*        </div>*/}
-            {/*        <div>*/}
-            {/*            <div className="position-relative pt-5 px-3  pb-4 bgLightGrey"*/}
-            {/*                 style={{borderRadius: 30, marginTop: 54}}>*/}
-            {/*                <div className="resReviewFont font-weight-500 mb-4">*/}
-            {/*                    {reviews[reviewIndex].body}*/}
-            {/*                </div>*/}
-            {/*                <div className="resReviewFont font-weight-bolder">*/}
-            {/*                    {reviews[reviewIndex].name}*/}
-            {/*                </div>*/}
-            {/*                <div className="resReviewFont font-weight-500">*/}
-            {/*                    {reviews[reviewIndex].designation}*/}
-            {/*                </div>*/}
-            {/*                <div style={{*/}
-            {/*                    top: 0,*/}
-            {/*                    left: "50%",*/}
-            {/*                    transform: "translate(-50%,-75%)",*/}
-            {/*                    zIndex: 10*/}
-            {/*                }}*/}
-            {/*                     className="position-absolute commentIcon">*/}
-            {/*                    <img src="/assets/images/comment-icon.png" className="w-100" alt="Comments"/>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*        <div className="pointer p-1 bgLightGrey d-flex justify-content-center align-items-center reviewNav" onClick={() => {*/}
-            {/*            let tempReviewIndex = reviewIndex;*/}
-            {/*            if (tempReviewIndex < reviews.length - 1) {*/}
-            {/*                tempReviewIndex++;*/}
-            {/*                setReviewIndex(tempReviewIndex)*/}
-            {/*            }*/}
-            {/*        }}>*/}
-            {/*        <FontAwesomeIcon icon={faChevronRight}  size="md"  color={reviewIndex < reviews.length - 1 ? '#1F2C38' : '#434e57'}/>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*    <div className="d-flex justify-content-center align-items-center mt-3">*/}
-            {/*        <div style={{display: "grid", gridTemplateColumns: "12px 12px 12px", gridGap: 8}}>*/}
-            {/*            <div style={{width: 12, height: 12, borderRadius:"50%", backgroundColor: reviewIndex===0?'#916CF6':'#C4C4C4'}} onClick={()=>{*/}
-            {/*                setReviewIndex(0)*/}
-            {/*            }}></div>*/}
-            {/*            <div style={{width: 12, height: 12, borderRadius:"50%", backgroundColor: reviewIndex===1?'#916CF6':'#C4C4C4'}} onClick={()=>{*/}
-            {/*                setReviewIndex(1)*/}
-            {/*            }}></div>*/}
-            {/*            <div style={{width: 12, height: 12, borderRadius:"50%", backgroundColor: reviewIndex===2?'#916CF6':'#C4C4C4'}} onClick={()=>{*/}
-            {/*                setReviewIndex(2)*/}
-            {/*            }}></div>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*    <div className="sectionTitle mt-5 mb-4 pt-3 d-flex justify-content-center align-items-center">Maximize your workplace ROI</div>*/}
-            {/*    <div className="CTAWrapper pb-4">*/}
-            {/*        <a className="demoCTA" href="https://calendly.com/d/n6ff-x2mp/thunderpod-demo" target="_blank">Get a*/}
-            {/*            demo*/}
-            {/*        </a>*/}
-            {/*        <a className="signInCTA" href="https://business.thunderpod.com/signup" target="_blank"*/}
-            {/*           rel="noopener noreferrer">Try for free</a>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
 
         </div>
     )

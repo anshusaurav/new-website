@@ -48,23 +48,21 @@ const Header = (props) => {
                     />
                   </div>
                 </DropdownToggle>
-                <DropdownMenu className="productDropdownMenu">
-                  <DropdownItem className="productMenuItem d-flex align-items-center" onClick={() => {
+                <DropdownMenu className="productDropdownMenu px-2">
+                  <DropdownItem className="productMenuItem d-flex align-items-center font-weight-600" onClick={() => {
                     props.history.push('/work')
                   }}>
-                    <img src="/assets/images/work-icon-low.png" style={{width: 18, height: "auto"}} className="mr-2"/>Work
+                    <img src="/assets/images/work-icon-sm.png" style={{width: 18, height: "auto"}} className="mr-2"/>Work
                   </DropdownItem>
-                  <DropdownItem divider/>
-                  <DropdownItem className="productMenuItem d-flex align-items-center" onClick={() => {
+                  <DropdownItem divider className="mx-2"/>
+                  <DropdownItem className="productMenuItem d-flex align-items-center font-weight-600" onClick={() => {
                     props.history.push('/wellbeing')
                   }}>
-                      <img src="/assets/images/wellbeing-icon-low.png" style={{width: 18, height: "auto"}} className="mr-2"/>Wellbeing
+                      <img src="/assets/images/wellbeing-icon-sm.png" style={{width: 18, height: "auto"}} className="mr-2"/>Wellbeing
                   </DropdownItem>
                   <div className="topArrow"></div>
                 </DropdownMenu>
               </Dropdown>
-              {/*<div className="headerMenuOption">Products&nbsp;<FontAwesomeIcon icon={faCaretDown}/></div>*/}
-              {/*<div  className="headerMenuOption">Solutions</div>*/}
               <div className="headerMenuOption" onClick={() => {
                 props.history.push('/pricing')
               }}>Pricing
@@ -104,7 +102,7 @@ const Header = (props) => {
             }}>
               Work
             </DropdownItem>
-            <DropdownItem divider/>
+            <DropdownItem divider className="mx-3"/>
 
             <DropdownItem className="productMenuItem" onClick={() => {
               props.history.push('/wellbeing');
@@ -112,26 +110,26 @@ const Header = (props) => {
             }}>
               Wellbeing
             </DropdownItem>
-            <DropdownItem divider/>
+            <DropdownItem divider className="mx-2"/>
             <DropdownItem className="productMenuItem" onClick={() => {
               props.history.push('/pricing');
               setHamburgerOpen(false);
             }}>
               Pricing
             </DropdownItem>
-            <DropdownItem divider/>
+            <DropdownItem divider className="mx-2"/>
             <DropdownItem tag="a" href="https://business.thunderpod.com/signup" className="productMenuItem" target="_blank" rel="noopener noreferrer" onClick={() => {
               setHamburgerOpen(false);
             }}>
               Try for free
             </DropdownItem>
-            <DropdownItem divider/>
+            <DropdownItem divider className="mx-2"/>
             <DropdownItem tag="a" href="https://calendly.com/d/n6ff-x2mp/thunderpod-demo" className="productMenuItem" target="_blank" rel="noopener noreferrer" onClick={() => {
               setHamburgerOpen(false);
             }}>
               Get a demo
             </DropdownItem>
-            <DropdownItem divider/>
+            <DropdownItem divider className="mx-2"/>
             <DropdownItem tag="a" href="https://business.thunderpod.com/signin" className="productMenuItem" target="_blank" rel="noopener noreferrer" onClick={() => {
               setHamburgerOpen(false);
             }}>

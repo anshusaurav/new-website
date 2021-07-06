@@ -113,8 +113,8 @@
       }
 
       .platformCardIconContainer {
-        width: 48px;
-        height: 48px;
+        width: 44px;
+        height: 44px;
         margin: 0;
 
         @media only screen and (max-width: 991px) {
@@ -125,8 +125,8 @@
           margin: 0 auto;
         }
         @media only screen and (max-width: 575px) {
-          width: 36px;
-          height: 36px;
+          width: 44px;
+          height: 44px;
         }
       }
 
@@ -188,7 +188,7 @@
         }
         @media only screen and (max-width: 767px) {
           text-align: center;
-          bottom: 12px;
+          bottom: 0px;
           left: 16px;
         }
 
@@ -422,11 +422,10 @@
     margin: 0 auto;
     max-width: 880px;
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: 1fr ;
     align-items: center;
     grid-gap: 32px;
     @media only screen and (max-width: 767px) {
-      grid-template-columns: 20px 1fr 20px;
       grid-gap: 8px;
     }
     .resReviewFont{
@@ -450,15 +449,67 @@
         height: 20px;
       }
     }
+
     .commentIcon{
-    width: 90px;
-      height: 90px;
+    width: 72px;
+      height: 72px;
       @media only screen and (max-width: 767px) {
         width: 60px;
         height: 60px;
       }
     }
   }
+  .dots {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  .dot {
+    border: none;
+    width: 10px;
+    height: 10px;
+    background: #C4C4C4;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .dot:focus {
+    outline: none;
+  }
+
+  .dot.active {
+    background: #916CF6;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    visibility: visible;
+    cursor: pointer;
+    @media only screen and (max-width: 767px) {
+      visibility: hidden;
+    }
+  }
+
+  .arrow--left {
+    transform: translateX(-100%);
+    left: -5px;
+  }
+
+  .arrow--right {
+    transform: translateX(100%);
+    left: auto;
+    right: -5px;
+  }
+
+
 
   .CTAWrapper {
     display: grid;

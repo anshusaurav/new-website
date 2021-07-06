@@ -1,6 +1,4 @@
 import React, {useEffect} from 'react'
-import Features from "../../components/new/Features";
-import OtherHero from "../../components/new/OtherHero";
 import NewOtherHero from "../../components/new/NewOtherHero";
 import NewFeatures from "../../components/new/NewFeatures";
 import NewProductivityPreFooter from "../../components/new/NewProductivityPreFooter";
@@ -46,13 +44,6 @@ const cards = [
 
   }]
 
-const preFooterImages = [
-  {imageUrl: '/assets/images/activity-pf-1.png',name: 'Walking'},
-  {imageUrl: '/assets/images/activity-pf-2.png',name: 'Meditation'},
-  {imageUrl:'/assets/images/activity-pf-3.png',name: 'Brain-games'},
-  {imageUrl:'/assets/images/activity-pf-4.png', name: 'Workout'},
-  {imageUrl:'/assets/images/activity-pf-5.png',name: 'Dance-fitness'}
-]
 const clientsImgURL = "/assets/images/clients.png"
 const Productivity = (props) => {
   const {openTypeForm} = props;

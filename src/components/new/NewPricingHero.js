@@ -48,8 +48,7 @@ const pricingOptions = [
     },
 ]
 const NewPricingHero = (props) => {
-    const {card, openTypeForm} = props;
-    const [mobilePricingState, setMobilePricingState] = useState([true, true, true])
+    const {card} = props;
     return (
         <>
             <div className="pricingPageHero">
@@ -101,7 +100,7 @@ const NewPricingHero = (props) => {
                                             </div>
                                             <hr className="d-block"/>
                                             <div
-                                                className={classNames("responsiveContainer", {"nullHeight": !mobilePricingState[index]})}>
+                                                className={classNames("responsiveContainer")}>
                                                 {
                                                     option.features.map((feature, index) => {
                                                         return (

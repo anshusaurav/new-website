@@ -79,7 +79,7 @@ const pricingOptions = [
   },
 ]
 const PricingHero = (props) => {
-  const {card, openTypeForm} = props;
+  const {card} = props;
   const [mobilePricingState, setMobilePricingState] = useState([false, false, true,false,false])
   return (
     <div className="d-flex flex-nowrap align-items-center justify-content-center pricingPageHero">
@@ -96,18 +96,11 @@ const PricingHero = (props) => {
               pricingOptions.map((option, index) => {
                 return (
                   <div key={"pricingOption-"+index}
-                    className={classNames("pricingOption", {"pricing-order-0": index == 0}, {"pricing-order-1": index == 1},
-                      {"pricing-order-2": index == 2}, {"pricing-order-3": index == 3}, {"pricing-order-4": index == 4})}
+                    className={classNames("pricingOption", {"pricing-order-0": index === 0}, {"pricing-order-1": index === 1},
+                      {"pricing-order-2": index === 2}, {"pricing-order-3": index === 3}, {"pricing-order-4": index === 4})}
                     onClick={()=>{
                       let tempState = [...mobilePricingState];
                       tempState[index] = !tempState[index];
-                      // for(let i =0; i < 5;i++){
-                      //   if(i!==index && tempState[index]){
-                      //     if(tempState[i]){
-                      //       tempState[i]= false;
-                      //     }
-                      //   }
-                      // }
                       setMobilePricingState(tempState);
                     }}>
                     <div className="pricingOptionTitle">
@@ -155,8 +148,6 @@ const PricingHero = (props) => {
                 )
               })
             }
-
-
           </div>
         </div>
       </div>

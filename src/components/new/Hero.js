@@ -1,8 +1,6 @@
 import React, {} from "react"
 import "./Hero.scss"
-import TypeAnimation from 'react-type-animation';
 import ProgressiveImage from "react-progressive-image";
-// const textArray = ['Performance', 'Growth', 'Productivity'];
 const Hero = (props) => {
 
   // const [textIdx, setTextIdx] = useState(0);
@@ -24,9 +22,6 @@ const Hero = (props) => {
               <br/>of your team
             </div>
             <div className="heroSubTitle mb-4">Improve your 1-on-1s, meetings, goal planning & team's wellbeing - all at one place.</div>
-            {/*<div className="d-flex justify-content-center justify-content-md-start">*/}
-            {/*  <input type="email" className="emailInput" placeholder="Enter your work email"/>*/}
-            {/*</div>*/}
             <a className="demoCTA" href="https://business.thunderpod.com/signup" target="_blank"
                rel="noopener noreferrer">Try for free</a>
           </div>
@@ -38,13 +33,6 @@ const Hero = (props) => {
           >
             {src => <img src={src} alt="" className="w-100"/>}
           </ProgressiveImage>
-          {/*<LazyLoadImage*/}
-          {/*  alt=""*/}
-          {/*  className="w-100"*/}
-          {/*  effect="blur"*/}
-          {/*  placeholderSrc="assets/images/home-hero-low.png"*/}
-          {/*  src="assets/images/home-hero.png" />*/}
-          {/*<img src="assets/images/home-hero.png" className="w-100" alt=""/>*/}
         </div>
       </div>
     </div>

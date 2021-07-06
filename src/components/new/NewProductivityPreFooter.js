@@ -1,14 +1,8 @@
 import React, {useState} from "react"
-import {Link} from "react-router-dom";
-import {
-    faAngleRight, faChevronLeft, faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
 import {useKeenSlider} from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import "./NewProductivityPreFooter.scss"
 
-const productivityVars = ["Activities", "Challenges", "Rewards"]
 const activityImages = [
     {imageUrl: '/assets/images/activity-pf-1.png', name: 'Walking'},
     {imageUrl: '/assets/images/activity-pf-2.png', name: 'Meditation'},
@@ -35,8 +29,7 @@ const NewProductivityPreFooter = (props) => {
     const [selectedIndex, setSelectedIndex] = useState(0)
     const [imageCards, setImageCards] = useState(activityImages);
     const [selectedImage, setSelectedImage] = useState(0);
-    const [mobileCards, setMobileCards] = useState(activityImages)
-    const [sliderRef] = useKeenSlider({ slidesPerView:2, spacing: 0, loop: true })
+    const [sliderRef] = useKeenSlider({ slidesPerView:2 , spacing: 12, loop: true })
 
 
     React.useEffect(() => {
@@ -45,19 +38,16 @@ const NewProductivityPreFooter = (props) => {
             let tempSelectedIndex = selectedIndex;
             if (tempSelectedIndex === 0) {
                 setSelectedIndex(1);
-                setSelectedOption('Challenges');
                 setImageCards(challengesImages);
             } else if (tempSelectedIndex === 1) {
                 setSelectedIndex(2);
-                setSelectedOption('Rewards');
                 setImageCards(rewardsImages);
             } else {
                 setSelectedIndex(0);
-                setSelectedOption('Activities');
                 setImageCards(activityImages);
 
             }
-        }, 10000);
+        }, 5200);
         return () => {
             clearTimeout(timeout);
         }
@@ -122,7 +112,7 @@ const NewProductivityPreFooter = (props) => {
                             Activities
                         </div>
                         <div
-                            className={"shadow bgWhite optionsCTA " + (selectedOption == "Challenges" ? "lightPurple font-weight-bolder" : "darkGrey")}
+                            className={"shadow bgWhite optionsCTA " + (selectedOption === "Challenges" ? "lightPurple font-weight-bolder" : "darkGrey")}
                             onClick={() => {
                                 setSelectedImage(1);
                                 setSelectedOption('Challenges');
@@ -131,7 +121,8 @@ const NewProductivityPreFooter = (props) => {
                             Challenges
                         </div>
                         <div
-                            className={"shadow bgWhite optionsCTA " + (selectedOption == "Rewards" ? "lightPurple font-weight-bolder" : "darkGrey")}
+                            className={"shadow bgWhite optionsCTA " + (selectedOption === "Rewards" ? "lightPurple" +
+                                " font-weight-bolder" : "darkGrey")}
                             onClick={() => {
                                 setSelectedImage(2);
 
@@ -164,7 +155,7 @@ const NewProductivityPreFooter = (props) => {
                     }
                 </div>
                 <div className="d-block d-md-none">
-                    <div ref={sliderRef} className="keen-slider bgWhite">
+                    <div ref={sliderRef} className="keen-slider ">
                         {
                             imageCards.map((card, index) => {
                                 return (
@@ -184,8 +175,7 @@ const NewProductivityPreFooter = (props) => {
                     <a className="demoCTA" href="https://calendly.com/d/n6ff-x2mp/thunderpod-demo" target="_blank">Get a
                         demo
                     </a>
-                    <a className="signInCTA" href="https://business.thunderpod.com/signup" target="_blank"
-                       rel="noopener noreferrer">Try for free</a>
+                    <a className="signInCTA" rel="noopener noreferrer" href="https://business.thunderpod.com/signup" target="_blank">Try for free</a>
                 </div>
             </div>
         </div>

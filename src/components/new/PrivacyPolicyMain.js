@@ -2,7 +2,6 @@ import React from "react"
 import "./PrivacyPolicyMain.scss"
 
 const PrivacyPolicyMain = (props) => {
-  const {card} = props;
   return (
     <div className="privacyPolicyMain">
       <div className="featuresContainer bg-white">

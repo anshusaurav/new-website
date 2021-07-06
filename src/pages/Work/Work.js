@@ -62,8 +62,8 @@ const Work = (props) => {
     }, []);
     return (
         <>
-            <NewOtherHero demoClick={openTypeForm} card={heroCard} page="Productivity"/>
-            <NewFeatures demoClick={openTypeForm} cards={cards} clientImageURL={clientsImgURL} page="Productivity"/>
+            <NewOtherHero demoClick={openTypeForm} card={heroCard} page="Work"/>
+            <NewFeatures demoClick={openTypeForm} cards={cards} clientImageURL={clientsImgURL} page="Work"/>
             <NewWorkPreFooter demoClick={openTypeForm} />
         </>
     )

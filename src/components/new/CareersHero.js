@@ -1,48 +1,7 @@
-import React, {useState} from "react"
-import Select , { components }from "react-select";
+import React from "react"
 import "./CareersHero.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
-import { library } from "@fortawesome/fontawesome-svg-core";
-library.add(faCaretDown);
 
-const Placeholder = props => {
-  return <components.Placeholder {...props} />;
-};
 
-const CaretDownIcon = () => {
-  return <FontAwesomeIcon icon="caret-down" color="#1F2C38"/>;
-};
-
-const DropdownIndicator = props => {
-  return (
-    <components.DropdownIndicator {...props}>
-      <CaretDownIcon />
-    </components.DropdownIndicator>
-  );
-};
-const style = {
-  control: (base, state) => ({
-    ...base,
-    fontSize:"12px",
-    border: state.isFocused ? 0 : 0,
-    boxShadow: state.isFocused ? 0 : 0,
-    "&:hover": {
-      border: state.isFocused ? 0 : 0
-    }
-  }),
-  option: (base, state) => ({
-    ...base,
-    padding:"4px 8px",
-    borderRadius:"10px",
-    fontSize:"12px",
-    fontWeight: state.isSelected ? "700" : "500",
-    color: "white",
-    backgroundColor: state.data.color,
-  })
-};
-const locationOptions = ["Mumbai", "Bengaluru", "Remote"];
-const teamOptions = ["Creative Team", "Engineering", "Internship"];
 const cards = [
 
   {
@@ -64,9 +23,7 @@ const cards = [
   },
 ]
 const CareersHero = (props) => {
-  const {demoClick, card} = props;
-  const [team, setTeam] = useState(null);
-  const [location, setLocation] = useState(null);
+  const {card} = props;
   return (
     <div className="d-flex align-items-center justify-content-between careersPageHero">
       <div className="pageHeroWrapper">

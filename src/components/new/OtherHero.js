@@ -1,6 +1,5 @@
 import React from "react"
 import "./OtherHero.scss"
-import ProgressiveImage from "react-progressive-image";
 const OtherHero = (props) => {
   const {card} = props;
   return (

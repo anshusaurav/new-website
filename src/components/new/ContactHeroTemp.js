@@ -3,7 +3,6 @@ import "./ContactHeroTemp.scss"
 import {faEnvelopeOpen, faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faFacebookF, faInstagram, faLinkedinIn, faTwitter} from "@fortawesome/free-brands-svg-icons";
 
 const contactInfoList = [
     {
@@ -24,7 +23,7 @@ const contactInfoList = [
 
 ]
 const ContactHeroTemp = (props) => {
-    const {demoClick, card} = props;
+    const {card} = props;
     return (
         <div className="d-flex flex-nowrap align-items-center justify-content-center contactTempPageHero">
             <div className="pageHeroWrapper">
