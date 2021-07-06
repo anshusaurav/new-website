@@ -286,7 +286,9 @@
       }
       .linkGroupWrapper{
         display:grid;
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 2.5rem;
+        justify-content: start;
         @media only screen and (max-width: 767px) {
           grid-template-columns: 1fr;
         }
@@ -319,7 +321,6 @@
         margin: 0 auto;
         .linkGroupWrapper{
           grid-template-columns: repeat(3, 1fr);
-
           grid-gap:2.5rem;
         }
         @media only screen and (max-width: 767px) {
