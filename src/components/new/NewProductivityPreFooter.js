@@ -38,12 +38,15 @@ const NewProductivityPreFooter = (props) => {
             let tempSelectedIndex = selectedIndex;
             if (tempSelectedIndex === 0) {
                 setSelectedIndex(1);
+                setSelectedOption('Challenges');
                 setImageCards(challengesImages);
             } else if (tempSelectedIndex === 1) {
                 setSelectedIndex(2);
+                setSelectedOption('Rewards');
                 setImageCards(rewardsImages);
             } else {
                 setSelectedIndex(0);
+                setSelectedOption('Activities');
                 setImageCards(activityImages);
 
             }
